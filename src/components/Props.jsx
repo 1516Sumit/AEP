@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import watsapp from "../icons/whatsapp (1).png";
 import background from "../img/image.png";
 import Topper from "./Topper";
-import Nav from "./Nav";
+import MyNavbar from "./MyNavbar";
 import Footer from "./Footer";
 
 function Props(props) {
@@ -23,7 +23,7 @@ function Props(props) {
         }}
       >
         <Topper />
-        <Nav />
+        <MyNavbar />
         <div
           id="home1"
           className="h-[40rem] md:h-[30rem] lg:h-auto flex flex-col items-center md:items-auto justify-center md:justify-between"
