@@ -1,28 +1,33 @@
 import React from "react";
-import founderimg from "../founder/image.png";
 
 function Founder(props) {
   return (
-    <div style={{ overflow: "hidden" }}>
-      <h2 id="industry-h2" style={{ textAlign: "center", fontSize: "6vh" }}>
+    <div className="overflow-hidden" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+      <h2 id="industry-h2" className="text-center text-3xl md:text-5xl" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
         {props.h}
       </h2>
       <div
         id="founder"
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          marginTop: "60px",
-        }}
+        className="flex justify-evenly items-center flex-col md:flex-row gap-4 md: gap-0mt-4 p-4 md:mt-14"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
       >
-        <img id="founder-img" style={{ height: "60vh" }} src={founderimg}></img>
-        <div style={{ width: "30vw", margin: "0" }}>
-          <h3 id="industry-h" style={{ fontSize: "5vw" }}>
+        <img
+          id="founder-img"
+          className="w-5/12 lg:w-1/4"
+          src={props.image}
+          alt={`${props.name}`}
+          data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        />
+        <div className="w-10/12 md:w-2/4 m-0" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+          <h3 id="industry-h" className="text-xl md:text-4xl">
             {props.name}
           </h3>
-          <p className="p-f">{props.description}</p>
-          <p className="p-f"></p>
+          <p className="p-f text-base xl:text-lg">{props.description}</p>
         </div>
       </div>
     </div>

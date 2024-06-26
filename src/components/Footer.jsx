@@ -1,94 +1,55 @@
-import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div
-      style={{
-        height: "50vh",
-        backgroundColor: "black ",
-        padding: "20px",
-        margin: "0",
-        width: "100vw",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-around",
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: "#FF6E1D",
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          height: "8vh",
-          borderRadius: "5px",
-        }}
-      >
-        <div style={{ color: "#fff", fontSize: "2vh" }}>
-          <span id="footer-span">
-            It will help you improve your writing<br></br> & bring ideas more
+    <div className="h-auto md:h-[50vh] bg-black p-5 m-0 w-full flex flex-col justify-around gap-10"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+      <div className="bg-[#FF6E1D] w-full flex justify-between items-center flex-col md:flex-row gap-10 md:gap-0 h-auto md:h-[10vh] rounded-md p-12">
+        <div className="text-white">
+          <span className="text-2xl lg:text-3xl">
+            It will help you improve your writing<br /> & bring ideas more
             clearly.
           </span>
         </div>
         <div>
           <button
-            style={{
-              backgroundColor: "#fff",
-              borderRadius: "4px",
-              fontWeight: "700",
-            }}
+            className="bg-white rounded-md font-bold py-3 px-8 lg:px-12" 
             id="footer-btn"
           >
-            Contact Us Now
+            About Us
           </button>
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-
-          justifyContent: "space-around",
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{ display: "flex", flexDirection: "column", color: "#fff" }}
-        >
-          <h6>Company</h6>
-          <Link to="blogs"> About</Link>
-          <a>Feature</a>
-          <a>Works</a>
-          <a>Career</a>
+      <div className="flex justify-around flex-col md:flex-row items-start gap-10 md:gap-0 md:items-center text-white">
+        <div className="flex flex-col">
+          <h6 className="mb-2">Company</h6>
+          <Link className="text-decoration-none text-white" to="blogs" >About</Link>
+          <Link className="text-decoration-none text-white" href="/" >Feature</Link>
+          <Link className="text-decoration-none text-white" href="/" >Works</Link>
+          <Link className="text-decoration-none text-white" href="/" >Career</Link>
         </div>
-        <div
-          style={{ display: "flex", flexDirection: "column", color: "#fff" }}
-        >
-          <h6>Company</h6>
-          <a>About</a>
-          <a>Feature</a>
-          <a>Works</a>
-          <a>Career</a>
+        <div className="flex flex-col">
+          <h6 className="mb-2">Help</h6>
+          <Link className="text-decoration-none text-white" href="/" >Customer Support</Link>
+          <Link className="text-decoration-none text-white" href="/" >Delivery Details</Link>
+          <Link className="text-decoration-none text-white" href="/" >Terms & Conditions</Link>
+          <Link className="text-decoration-none text-white" href="/" >Privacy Policy</Link>
         </div>
-        <div
-          style={{ display: "flex", flexDirection: "column", color: "#fff" }}
-        >
-          <h6>Company</h6>
-          <a>About</a>
-          <a>Feature</a>
-          <a>Works</a>
-          <a>Career</a>
+        <div className="flex flex-col">
+          <h6 className="mb-2">Resources</h6>
+          <Link className="text-decoration-none text-white" href="/" >Free eBooks</Link>
+          <Link className="text-decoration-none text-white" href="/" >Development Tutorial</Link>
+          <Link className="text-decoration-none text-white" href="/" >How to - Blog</Link>
+          <Link className="text-decoration-none text-white" href="/" >Youtube Playlist</Link>
         </div>
-        <div
-          style={{ display: "flex", flexDirection: "column", color: "#fff" }}
-        >
-          <h6>Company</h6>
-          <a>About</a>
-          <a>Feature</a>
-          <a>Works</a>
-          <a>Career</a>
+        <div className="flex flex-col">
+          <h6 className="mb-2">Links</h6>
+          <Link className="text-decoration-none text-white" href="/" >Free eBooks</Link>
+          <Link className="text-decoration-none text-white" href="/" >Development Tutorial</Link>
+          <Link className="text-decoration-none text-white" href="/" >How to - Blog</Link>
+          <Link className="text-decoration-none text-white" href="/" >Youtube Playlist</Link>
         </div>
       </div>
     </div>

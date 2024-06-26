@@ -14,41 +14,42 @@ const MyNavbar = () => {
   return (
     <>
       <Navbar id="navi" expand="lg" bg="transparent" variant="light">
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <img id="aep" className="bg-transparent" src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNavDropdown" />
-        <Navbar.Collapse id="navbarNavDropdown" className="justify-content-end">
+        <Navbar.Collapse id="navbarNavDropdown" className="justify-content-end text-white">
           <Nav>
-            <Nav.Link className="" href="#">
+            <Nav.Link className="font-poppins text-white" href="#">
               About
             </Nav.Link>
-            <NavDropdown
-              title="Services"
-              id="navbarDropdownMenuLink"
-              className="text-white"
-            >
+            <NavDropdown className="text-white" title={<span className="text-white">Services</span>} id="navbarDropdownMenuLink">
               <NavDropdown.Item href="#">Action</NavDropdown.Item>
               <NavDropdown.Item href="#">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
-              title="Application of waste"
+              title={<span className="text-white">Application by waste</span>}
               id="navbarDropdownMenuLink"
               className="text-white"
             >
-              <NavDropdown.Item href="#">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
+              <NavDropdown.Item href="agriculturalWaste">Agricultural Waste</NavDropdown.Item>
+              <NavDropdown.Item href="fuelWaste">Fuel Waste</NavDropdown.Item>
+              <NavDropdown.Item href="plastic">Plastic Waste</NavDropdown.Item>
+              <NavDropdown.Item href="municipalWaste">Municipal Solid Waste</NavDropdown.Item>
+              <NavDropdown.Item href="rubberWaste">Rubber Waste</NavDropdown.Item>
+              <NavDropdown.Item href="bioHazardWaste">Bio Hazard Waste</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
-              title="Industrial Application"
+              title={<span className="text-white">Industrial Application</span>}
               id="navbarDropdownMenuLink"
               className="text-white"
             >
-              <NavDropdown.Item href="#">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
+              <NavDropdown.Item href="agriculture">Agriculture and Food industry</NavDropdown.Item>
+              <NavDropdown.Item href="petro">PetroChemical Industry</NavDropdown.Item>
+              <NavDropdown.Item href="fmcg">Plastic Product & FMCG Industry</NavDropdown.Item>
+              <NavDropdown.Item href="waste">Waste Management Industry</NavDropdown.Item>
+              <NavDropdown.Item href="rubber">Rubber Industry</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className="text-white" href="#" onClick={handleShow}>
               Contact Us
@@ -57,20 +58,22 @@ const MyNavbar = () => {
         </Navbar.Collapse>
       </Navbar>
 
-      <Modal show={show} onHide={handleClose}>
-        <div style={{ display: "flex" }}>
-          <div>
+      <Modal show={show} onHide={handleClose} >
+        <div className="flex flex-col w-full">
+          {/* <div>
             {" "}
-            <img src={conimg} style={{ width: "20vw" }}></img>
-          </div>
+            <img alt="#" src={conimg} style={{ width: "20vw" }} />
+          </div> */}
           <div>
             <Modal.Header closeButton>
-              <Modal.Title>Contact Us</Modal.Title>
-              <p>Any question or remarks? Just write us a message!</p>
+              <div className="flex flex-col">
+                <Modal.Title>Contact Us</Modal.Title>
+                <p>Any question or remarks? Just write us a message!</p>
+              </div>
             </Modal.Header>
             <Modal.Body>
               <Form>
-                <div style={{ display: "flex" }}>
+                <div className="flex flex-col">
                   <Form.Group>
                     <Form.Label>First Name</Form.Label>
                     <Form.Control />
@@ -80,7 +83,7 @@ const MyNavbar = () => {
                     <Form.Control />
                   </Form.Group>
                 </div>
-                <div style={{ display: "flex" }}>
+                <div className="flex flex-col">
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
@@ -105,7 +108,7 @@ const MyNavbar = () => {
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
                 {["checkbox", "radio"].map((type) => (
-                  <div key={`inline-${type}`} className="mb-3">
+                  <div key={`inline-${type}`} className="flex flex-row justify-evenly items-center mb-3">
                     <Form.Label>Select Subjects: </Form.Label>
                     <Form.Check
                       inline

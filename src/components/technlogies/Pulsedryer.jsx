@@ -5,9 +5,21 @@ function Pulsedryer() {
   return (
     <Props
       heading="Pulse Dryer"
-      para="One of our latest technologies, made to complement the plants is the pulse drying/instant drying unit, which can remove a required % amount of moisture contained in any homogeneous material to be processed as may be required for optimization of its further processing and can sanitize a content of drum capsules due to pressure impact, using a fully controlled process of an impulse like steam micro explosion energy release in the enclosed and sealed space, able to remove 20-90% of moisture from any material. You may think of it as industrial press working not in vertical direction only but as pressure moving in space in all directions from inside out, with condensed wastewater released by safety valve to storage tank for next stage.
-  Pulse drying may be used for a variety of industries, like a food & beverage materials/ concentrates processing industry, powder or paste like materials drying, pharmaceuticals, industrial chemicals, construction materials industry, etc.  
-  "
+      para="Custom-manufactured equipment tailored to the Customer's specifications for specific waste types, operating in continuous or cyclic modes, available in stationary and mobile versions for any climate."
+
+      para1="Compliance with European air emissions standards and zero emissions of flue gases in the 'Pulsar-EL' and 'Potok-EL' lines, ensuring no environmental impact, discharge of contaminated water, ash, or sludge."
+
+      para2="Included equipment for briquetting or pelletizing carbon black / ash per Customer's specifications."
+
+      para3="Complete purification of pyrolysis gas from paraffins, wax, carbon black, and oil, preventing heavy hydrocarbon deposits and enabling use in burners, engines, and turbines."
+
+      para4="Easily compressed and liquefied 100 % purified pyrolysis gas, reducing volume by 250 times for easy storage and remote transportation."
+      para5="High productivity with continuous cycle units processing up to 40 tons of waste per day and long - term operation without maintenance for up to 12 months."
+      para6="Automatic filter cleaning system during operation and production of high - quality pyrolysis liquids with low aromatic content through shock condensation."
+      para7="Enhanced safety with a double redundant security system and multi - stage fire extinguishing system, plus PLC - based complex operation control and optional video surveillance."
+      para8="Real - time operational parameter monitoring via internet cloud technology, high - quality heat - resistant steels with a 6 - year warranty against burnout, and no smoke or odors during operation."
+      para9="Integrated processing of pyrolysis liquids using cavitation and/or emulsification equipment, climate control in containerized installations, and autonomous backup power for safe shutdowns."
+      para10="Optional gas electric generator sets, complete processing equipment for producing gasoline, diesel, solvents, and HFO / bitumen via mini refineries, and additional equipment for drying high - moisture waste with continuous humidity controls."
     />
   );
 }

@@ -1,151 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
+import { Navbar, Nav, NavDropdown, Button, Modal, Form } from "react-bootstrap";
 import logo from "../logo/image.png";
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import conimg from "../img/image copy 6.png";
 
-export default function Nav() {
+const MyNavbar = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-trasnparent">
-      <a className="navbar-brand " href="#">
-        <img id="aep" className=" bg-transparent" src={logo} alt="logo"></img>
-      </a>
-      <button
-        className="navbar-toggler bg-white"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
-      <div
-        className="collapse navbar-collapse justify-content-end"
-        id="navbarNavDropdown"
-      >
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link text-white" href="#">
-              About<span className="sr-only"></span>
-            </a>
-          </li>
-          <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle text-white"
-              href="#"
+    <>
+      <Navbar id="navi" expand="lg" bg="transparent" variant="light">
+        <Navbar.Brand href="/">
+          <img id="aep" className="bg-transparent" src={logo} alt="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNavDropdown" />
+        <Navbar.Collapse id="navbarNavDropdown" className="justify-content-end text-white">
+          <Nav>
+            <Nav.Link className="font-poppins text-white" href="#">
+              About
+            </Nav.Link>
+            <NavDropdown className="text-white" title={<span className="text-white">Services</span>} id="navbarDropdownMenuLink">
+              <NavDropdown.Item href="#">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#">Another action</NavDropdown.Item>
+              <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title={<span className="text-white">Application by waste</span>}
               id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+              className="text-white"
             >
-              Services
-            </a>
-            <div
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </div>
-          </li>
-          <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle text-white"
-              href="#"
+              <NavDropdown.Item href="agriculturalWaste">Agricultural Waste</NavDropdown.Item>
+              <NavDropdown.Item href="fuelWaste">Fuel Waste</NavDropdown.Item>
+              <NavDropdown.Item href="plastic">Plastic Waste</NavDropdown.Item>
+              <NavDropdown.Item href="municipalWaste">Municipal Solid Waste</NavDropdown.Item>
+              <NavDropdown.Item href="rubberWaste">Rubber Waste</NavDropdown.Item>
+              <NavDropdown.Item href="bioHazardWaste">Bio Hazard Waste</NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title={<span className="text-white">Industrial Application</span>}
               id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+              className="text-white"
             >
-              Application of waste
-            </a>
-            <div
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </div>
-          </li>
-          <li className="nav-item dropdown">
-            <a
-              className="nav-link dropdown-toggle text-white"
-              href="#"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Industrial Application
-            </a>
-            <div
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <a className="dropdown-item" href="#">
-                Action
-              </a>
-              <a className="dropdown-item" href="#">
-                Another action
-              </a>
-              <a className="dropdown-item" href="#">
-                Something else here
-              </a>
-            </div>
-          </li>
-          <li className="nav-item">
-            <a
-              className="nav-link text-white"
-              href="#"
-              variant="primary"
-              onClick={handleShow}
-            >
+              <NavDropdown.Item href="agriculture">Agriculture and Food industry</NavDropdown.Item>
+              <NavDropdown.Item href="petro">PetroChemical Industry</NavDropdown.Item>
+              <NavDropdown.Item href="fmcg">Plastic Product & FMCG Industry</NavDropdown.Item>
+              <NavDropdown.Item href="waste">Waste Management Industry</NavDropdown.Item>
+              <NavDropdown.Item href="rubber">Rubber Industry</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link className="text-white" href="#" onClick={handleShow}>
               Contact Us
-            </a>
-          </li>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
 
-          <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} >
+        <div className="flex flex-col w-full">
+          {/* <div>
+            {" "}
+            <img alt="#" src={conimg} style={{ width: "20vw" }} />
+          </div> */}
+          <div>
             <Modal.Header closeButton>
-              <Modal.Title>Contact Us</Modal.Title>
-
-              <p>Any question or remarks? Just write us a message!</p>
+              <div className="flex flex-col">
+                <Modal.Title>Contact Us</Modal.Title>
+                <p>Any question or remarks? Just write us a message!</p>
+              </div>
             </Modal.Header>
             <Modal.Body>
               <Form>
-                {" "}
-                <div style={{ display: "flex" }}>
+                <div className="flex flex-col">
                   <Form.Group>
                     <Form.Label>First Name</Form.Label>
-                    <Form.Control></Form.Control>
+                    <Form.Control />
                   </Form.Group>
                   <Form.Group>
                     <Form.Label>Last Name</Form.Label>
-                    <Form.Control></Form.Control>
+                    <Form.Control />
                   </Form.Group>
                 </div>
-                <div style={{ display: "flex" }}>
+                <div className="flex flex-col">
                   <Form.Group
                     className="mb-3"
                     controlId="exampleForm.ControlInput1"
@@ -159,7 +97,7 @@ export default function Nav() {
                   </Form.Group>
                   <Form.Group>
                     <Form.Label>Phone Number:</Form.Label>
-                    <Form.Control type="Number"></Form.Control>
+                    <Form.Control type="Number" />
                   </Form.Group>
                 </div>
                 <Form.Group
@@ -170,7 +108,7 @@ export default function Nav() {
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
                 {["checkbox", "radio"].map((type) => (
-                  <div key={`inline-${type}`} className="mb-3">
+                  <div key={`inline-${type}`} className="flex flex-row justify-evenly items-center mb-3">
                     <Form.Label>Select Subjects: </Form.Label>
                     <Form.Check
                       inline
@@ -202,55 +140,11 @@ export default function Nav() {
                 Send Message
               </Button>
             </Modal.Footer>
-          </Modal>
-          {/* <Popup
-            trigger={
-              <li className="nav-item">
-                <a className="nav-link text-white" href="#">
-                  Contact
-                </a>
-              </li>
-            }
-            position="center"
-          >
-            <div>
-              <h3>Contact Us</h3>
-              <p>Any question or remarks? Just Write us a message! </p>
-              <div>
-                <div id="contact-info">
-                  <b>Contact Information</b>
-                  <p>Say Something to start a live chat</p>
-                </div>
-                <div>
-                  <form>
-                    <label>First Name</label>
-                    <input></input>
-                    <label>Last Name</label>
-                    <input></input>
-                    <label>Email</label>
-                    <input type="email"></input>
-                    <label>Phone Number</label>
-                    <input type="Number"></input>
-                    <label for="cars">Choose a car:</label>
-                    <label>Select Subject?</label>
-                    <label>General Enquiry</label>
-                    <input type="checkbox"></input>
-                    <label>General Enquiry</label>
-                    <input type="checkbox"></input>
-                    <label>General Enquiry</label>
-                    <input type="checkbox"></input>
-                    <label>General Enquiry</label>
-                    <input type="checkbox"></input>
-                    <label>Message</label>
-                    <textarea></textarea>
-                    <button>Send Message</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </Popup> */}
-        </ul>
-      </div>
-    </nav>
+          </div>
+        </div>
+      </Modal>
+    </>
   );
-}
+};
+
+export default MyNavbar;

@@ -1,31 +1,47 @@
 import React from "react";
-import longimg from "../img/image copy 3.png";
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 function Long() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   return (
-    <div id="long">
-      <div style={{ textAlign: "center", color: "white" }}>
-        <span className="big-text">4k</span>
-        <br></br>
+    <div id="long" ref={ref} data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+        <span className="big-text">
+          {inView ? <CountUp duration={5} end={4} /> : '0'}k
+        </span>
+        <br />
         <span className="small-text">Project Done</span>
       </div>
-      <div style={{ textAlign: "center", color: "white" }}>
-        {" "}
-        <span className="big-text">98%</span>
-        <br></br>
+      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+        <span className="big-text">
+          {inView ? <CountUp duration={5} end={98} /> : '0'}%
+        </span>
+        <br />
         <span className="small-text">Happy Clients</span>
       </div>
-      <div style={{ textAlign: "center", color: "white" }}>
-        {" "}
-        <span className="big-text">185+</span>
-        <br></br>
+      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+        <span className="big-text">
+          {inView ? <CountUp duration={5} end={185} /> : '0'}+
+        </span>
+        <br />
         <span className="small-text">Project Done</span>
       </div>
-      <div style={{ textAlign: "center", color: "white" }}>
-        {" "}
-        <span className="big-text">23+</span>
-        <br></br>
-        <span className="small-text">Professioinal Worker</span>
+      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+        <span className="big-text">
+          {inView ? <CountUp duration={5} end={23} /> : '0'}+
+        </span>
+        <br />
+        <span className="small-text">Professional Worker</span>
       </div>
     </div>
   );

@@ -5,22 +5,27 @@ function GasCleansing() {
   return (
     <Props
       heading="Gas Cleansing"
-      para="Ionization or cold plasma as method of external energy impact on a substance molecular structure found many applications in the engineering. In aero-space industry it is a substantial subject of fundamental science related to chemistry, physics, new materials. As some of AEP ENG, AEP WORKS engineers worked in avionics and aero-space industry, we’ve got some know-how, few secrets under sleeve. It gives our plant the advantage over competition.
+      para="AEP ENG employs cutting-edge ionization and cold plasma technologies for purifying industrial flue gases, drawing on expertise cultivated in aerospace and avionics industries. These advanced methods are pivotal in addressing complex chemical compositions and particulate matter found in industrial emissions."
 
-  The technology for purifying industrial flue gases (regardless of the chemical composition and dust content) could be described,  as follows.
-  
-  In the first stage all Flue gases from the pyrolysis module/reactor processing input waste are being ducted to a specially designed mechanical vortex cyclone filter, where solid particles separated from gas at a micron/ submicron level up to 95.5% of the total gas particles pollution. Depending on the chemical composition of collected ash or carbon black, further use is determined for
-  - ash - as a binder for the cement industry,
-  - carbon - as a filler (ultraviolet protection) & black colour agent for technical plastics, dyes, paints, tyres, etc.
-  
-  In the second stage, flue gases cleared of dust and solid particles enter the gas processing zone using very high voltage for creation of the “ionic wind / cold plasma”. Active ions neutralize negative (harmful) chemical elements of the flue gases to neutral basic elements. 
-  
-  Because our pyrolysis process does not use burning oxygen O2, emission of CO2 is low, usually under 1-2%. Nevertheless, we know it is bad for biosphere, so all CO and CO2 gas must be 100% neutralised or destroyed by our filtering system. We do it in our unique ionization chamber of the gas cleansing module.
-  
-  Our technology does not use or contain alkalis, acids and other chemical elements, widely used in traditional wet and dry flue gas industrial cleaning systems. Electricity consumption for cleaning approx.6,000 m3 of flue gas ranges between 400-600 Watt only, depending on dust content and flue gas chemical composition.
-  
-  The cleaning installation module operates in automatic mode with our state of the art, round-the-clock measurement of chemical composition of flue gases before and after the cleaning system run. Redirection of cleaned once flue gas back to the closed loop system again and again allows us achieving nearly 100% cleaning of flue gas from all harmful emissions or substances. 
-  The removal and collection of solid particles by-products (ash & carbon black powder) from flue gases is fully automated too. All the data from gas sensors sent to cloud for real time monitoring."
+      para1="Initial purification begins with gases from the pyrolysis reactor entering a specially designed mechanical vortex cyclone filter. This component efficiently separates solid particles from the gas stream, achieving remarkable reductions in particle pollution levels at microscopic scales."
+
+      para2="The separated ash and carbon black by-products undergo further processing based on their chemical compositions. Ash is repurposed as a binder in the cement industry, while carbon black finds applications in UV protection and as a pigment in various manufacturing sectors."
+
+      para3="Once purified of solid particles, the gases proceed to a high-voltage gas processing zone where ionization technology generates an 'ionic wind' or cold plasma. This innovative process effectively neutralizes harmful chemical elements present in the flue gases, transforming them into inert substances."
+
+      para4="AEP's pyrolysis methodology inherently minimizes CO2 emissions, typically maintaining levels under 1-2%. However, to ensure minimal environmental impact, all residual CO and CO2 gases are meticulously neutralized or eliminated within a specialized ionization chamber."
+
+      para5="Unlike conventional flue gas cleaning methods that rely on alkalis and acids, AEP's approach is entirely chemical-free. This not only enhances operational sustainability but also reduces energy consumption, with cleaning operations requiring only 400-600 watts per 6,000 cubic meters of gas processed."
+
+      para6="The purification system operates autonomously, continuously monitoring the chemical composition of flue gases. Cleaned gases are seamlessly reintegrated into a closed-loop system, ensuring nearly complete removal of harmful emissions and substances."
+
+      para7="Automation plays a crucial role in managing the removal and collection of by-products such as ash and carbon black powder. This streamlined approach not only enhances operational efficiency but also optimizes resource utilization throughout the purification process."
+
+      para8="Real-time data from cloud-connected sensors provide comprehensive insights into system performance, enabling prompt adjustments and ensuring compliance with stringent environmental standards."
+
+      para9="AEP ENG's commitment to sustainable industrial practices and environmental stewardship is underscored by its innovative use of ionization and cold plasma technologies in flue gas purification."
+
+      para10="By integrating these advanced technologies, AEP ENG emerges as a leader in delivering eco-friendly solutions for industrial emissions management, setting new standards in efficiency and environmental responsibility."
     />
   );
 }

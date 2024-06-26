@@ -44,7 +44,11 @@ nav {
   margin: 0px 15vh 0px 15vh;
 }
 #aep {
-  height: 10vh;
+  width: 7vw;
+}
+
+.collapse {
+    visibility:visible;
 }
 @font-face {
   font-family: Cabinet;
@@ -53,15 +57,15 @@ nav {
 #hi {
   font-family: Cabinet;
   color: #fff;
-  font-size: 108px;
-  line-height: 108px;
+  font-size: 100px;
   text-align: center;
 
   font-weight: 700;
-  margin: 100px 10vw 2.5vh 10vw;
+  margin: 10% 10% 5% 10%;
+  text-transform: capitalize;
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-#home-p {
+/* #home-p {
   font-family: Inter;
   font-size: 18px;
   font-weight: 400;
@@ -72,22 +76,24 @@ nav {
   margin: 20vw;
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 #buttons {
   text-align: center;
 }
 #orange-button {
   background: #ff6e1d;
   color: #ffffff;
+  padding: 1%;
 }
 #white-button {
   background-color: #fff;
   margin: 20px;
+  padding: 1%;
 }
 button {
   background-color: #fff;
   border: none;
-  height: 4vh;
+  /* height: 4vh; */
 }
 #back {
   z-index: -1;
@@ -98,35 +104,56 @@ button {
 
 .watsappicon {
   height: 6vh;
-  position: absolute;
+  position: fixed;
   bottom: 15vh;
   right: 5vh;
 }
 #second-box {
-  width: 70vw;
+  /* width: 80vw; */
   background: #f2f2f4;
-  height: 60vh;
-  margin: 20vh 10vh 20vh 10vh;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
+  /* height: 70vh; */
+  margin: 20vh 5vh 20vh 5vh;
+  overflow-y: hidden;
 }
-#building {
-  height: 60vh;
-  width: 35vw;
+/* #building {
+  height: 70vh;
+  width: 40vw;
+} */
+
+.buildText{
+  height: 70vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
 }
+
+.buildText::-webkit-scrollbar {
+  display: none;
+}
+
 #long {
   background-image: url(../src/img/image\ copy\ 3.png);
   width: 100vw;
-  height: 15vh;
+  height: 30vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 5vh 0 5vh 0;
 }
+
+.underline{
+  text-decoration: underline;
+  text-decoration-color: #FF6E1D;
+}
+
 .big-text {
+  font-weight: 700;
   font-size: 60px;
   margin-bottom: 0%;
+}
+
+.small-text{
+  font-weight: 700;
 }
 br {
   margin: 0%;
@@ -148,7 +175,7 @@ br {
   background-color: #4b6bfb 5%;
 }
 /* media */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   body {
     margin: 0%;
     padding: 0px;
@@ -164,34 +191,37 @@ br {
   #industry {
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
-  #indus {
-    width: 90vw;
-  }
-  #industry-h {
+  
+  /* #industry-h {
     font-size: 3rem;
-  }
-  #industry-h2 {
-    font-size: 50px;
+  } */
+
+  /* .p-f {
+    font-size: 5px;
+  } */
+  #long {
+    flex-direction: column;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .p-f {
-    font-size: 5px;
-  }
-  #long {
-    display: none;
-  }
+/* .dropdown-toggle::after{
+  color: white!important;
+} */
+
   #abyw {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #photooil {
+  /* #photooil {
     display: none;
-  }
+  } */
 
   #email-span {
     font-size: 10px;
@@ -199,42 +229,51 @@ br {
   #call-span {
     font-size: 10px;
   }
-  #home-p {
+  /* #home-p {
     font-size: 15px;
-  }
+  } */
   #logo {
     padding: 10px;
   }
   #hi {
-    font-size: 30px;
+    font-size: 40px;
     line-height: 50px;
   }
+
+
+  .buildText{
+    /* height: 60vh; */
+    height: auto;
+  }
   #second-box {
-    width: 300px;
-    height: 300px;
-    margin: 10vh 5vh 10vh 5vh;
+    /* width: 300px;
+    height: 300px; */
+    margin: 5vh 4vh 5vh 4vh;
     font-size: x-small;
   }
   #text-box {
-    margin: 4px;
+    margin: 4%;
+    padding: 6%;
   }
   .card {
     margin-bottom: 5px;
   }
+
   .p-i {
     font-size: smaller;
   }
-  #founder {
-    height: 50vh;
+
+  #founder{
+    height: auto;
   }
+  
   #founder-img {
-    width: 50vw;
-    scale: 0.5;
+    width: 80%;
     position: relative;
   }
-  #industry-h {
+  /* #industry-h {
     font-size: 2vh;
-  }
+  } */
 
   #footer-span {
     font-size: smaller;
@@ -246,7 +285,12 @@ br {
     width: 15vw;
   }
   #navi {
-    width: 50vw;
+    width: 80%;
+  }
+
+  nav {
+    background-color: transparent;
+    margin: 0px 5vh 0px 5vh;
   }
 }
 

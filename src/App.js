@@ -51,8 +51,9 @@ function App() {
           path="blogs"
           element={
             <>
-              <Props heading="blogs" />
+              <Props heading="News & Blogs" sub="All Blogs Page" />
               <Blogspage />
+              <Footer/>
             </>
           }
         />

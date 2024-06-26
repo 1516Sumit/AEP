@@ -11,13 +11,20 @@ function ApplicationByWaste() {
         display: "flex",
         padding: "5vw 5vw 5vw 5vw",
         background: `url(${thisback})`,
+        backgroundSize: "cover",
+        backgroundRepeat:  "no-repeat",
         margin: "20px 0 20px 0",
       }}
+
+      className="gap-10 md:gap-4 w-screen flex-col items-center lg:flex-row"
+      data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
     >
-      <div style={{ width: "50vw", color: "white" }}>
-        <h6>Application</h6>
+      <div className="w-[85vw] lg:w-2/4 text-white" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+        <h6 style={{ color: "#FF6E1D" }}>Application</h6>
         <h2>
-          <u>Application</u> By Wastes
+          <u className="underline">Application</u> By Wastes
         </h2>
         <p>
           Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -40,9 +47,10 @@ function ApplicationByWaste() {
           sagittis vitae dignissim gravida.{" "}
         </p>
       </div>
-      <div>
+      <div className="w-[85vw] lg:w-2/4">
         <div className="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 my-2">
+          <div class="col-sm-12 col-md-6 col-lg-6 my-2" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <Link
               to="agriculturalWaste"
               className="text-black"
@@ -61,7 +69,8 @@ function ApplicationByWaste() {
             </Link>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-6 my-2">
+          <div class="col-sm-12 col-md-6 col-lg-6 my-2" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <Link
               to="fuelWaste"
               className="text-black"
@@ -81,7 +90,8 @@ function ApplicationByWaste() {
           </div>
         </div>
         <div className="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 my-2">
+          <div class="col-sm-12 col-md-6 col-lg-6 my-2" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <Link
               to="plastic"
               className="text-black"
@@ -100,7 +110,8 @@ function ApplicationByWaste() {
             </Link>
           </div>
 
-          <div class="col-sm-12 col-md-6 col-lg-6 my-2">
+          <div class="col-sm-12 col-md-6 col-lg-6 my-2" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <Link
               to="municipalWaste"
               className="text-black"
@@ -120,7 +131,8 @@ function ApplicationByWaste() {
           </div>
         </div>
         <div className="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 my-2">
+          <div class="col-sm-12 col-md-6 col-lg-6 my-2" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <Link
               to="rubberWaste"
               className="text-black"
@@ -138,7 +150,8 @@ function ApplicationByWaste() {
               </div>
             </Link>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 my-2">
+          <div class="col-sm-12 col-md-6 col-lg-6 my-2" data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
             <Link
               to="bioHazardWaste"
               className="text-black"

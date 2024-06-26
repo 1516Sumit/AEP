@@ -8,23 +8,26 @@ function Industrialapplication() {
   return (
     <div
       id="industry"
-      style={{ display: "flex", justifyContent: "space-around", padding: "0" }}
+      style={{ display: "flex", justifyContent: "space-evenly", padding: "0" }}
+      className="gap-10 md:gap-0 md:h-[90vh] items-center"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
     >
-      <div id="indus" style={{ margin: "0px", width: "50vw" }}>
-        <h6>Application</h6>{" "}
+      <div className="w-[85vw] md:w-8/12" id="indus" style={{ margin: "0px" }} data-aos="fade-up"
+        data-aos-anchor-placement="top-center">
+        <h6 style={{ color: "#FF6E1D" }}>Application</h6>{" "}
         <h2>
-          <u>Industrial</u> Application
+          <u className="underline">Industrial</u> Application
         </h2>
         <p className="p-i">
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s.
+        AEP ENG developed carbon-neutral technologies for hazardous waste processing, maximizing resource recovery<br/> and energy extraction for a circular economy.
         </p>
         <p className="p-i">
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s.
+          AEP ENG worked out the best matching processing parameters for maximum resource recovery and energy <br/>extraction for each waste group by extensive testing of over 200 types of waste.
         </p>
         <div className="row">
-          <div className="col-sm-12 col-md-6 col-lg-4 my-2">
+          <div className="col-sm-12 col-md-6 col-lg-4 my-2" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
             <Link
               to="agriculture"
               className="text-black"
@@ -35,14 +38,14 @@ function Industrialapplication() {
                   <img src={icon}></img>
                   <h5 className="card-title">Agriculture and Food industry</h5>
                   <p className="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                  Annual global Manure production output is x3 times larger than of the global Coal mining.
                   </p>
                 </div>
               </div>
             </Link>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-4 my-2">
+          <div className="col-sm-12 col-md-6 col-lg-4 my-2" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
             <Link
               to="petro"
               className="text-black"
@@ -53,14 +56,14 @@ function Industrialapplication() {
                   <img src={icon1}></img>
                   <h5 className="card-title">PetroChemical Industry</h5>
                   <p className="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                  We use specialized modules to recycle petrochemical waste, removing impurities and sulfur for energy or refining.
                   </p>
                 </div>
               </div>
             </Link>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-4 my-2">
+          <div className="col-sm-12 col-md-6 col-lg-4 my-2" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
             <Link
               to="fmcg"
               className="text-black"
@@ -83,7 +86,8 @@ function Industrialapplication() {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-12 col-md-6 col-lg-4 my-2">
+          <div className="col-sm-12 col-md-6 col-lg-4 my-2" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
             <Link
               to="waste"
               className="text-black"
@@ -101,7 +105,8 @@ function Industrialapplication() {
               </div>
             </Link>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-4 my-2">
+          <div className="col-sm-12 col-md-6 col-lg-4 my-2" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
             <Link
               to="rubber"
               className="text-black"
@@ -111,7 +116,7 @@ function Industrialapplication() {
                 <div className="card-body">
                   <img src={icon}></img>
                   <h5 className="card-title">
-                    Rubber <br></br> Industry
+                    Rubber Industry
                   </h5>
                   <p className="card-text">
                     With supporting text below as a natural lead-in to
@@ -124,7 +129,8 @@ function Industrialapplication() {
         </div>
       </div>
 
-      <div>
+      <div className="w-[85vw] md:w-3/12 flex md:hidden xl:flex justify-center items-center" data-aos="fade-right"
+        data-aos-anchor-placement="top-center">
         <img id="photooil" src={oilimg} alt="oil"></img>
       </div>
     </div>
