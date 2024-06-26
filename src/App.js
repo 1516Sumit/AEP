@@ -1,21 +1,21 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
-import Nav from "./components/Nav.jsx";
+// import Nav from "./components/Nav.jsx";
 
-import Topper from "./components/Topper.jsx";
+// import Topper from "./components/Topper.jsx";
 import Home from "./components/Home.jsx";
 
-import Second from "./components/Second.jsx";
-import Long from "./components/Long.jsx";
-import Industrialapplication from "./components/Industrialapplication.jsx";
-import Wasteapplication from "./components/Wasteapplication.jsx";
-import Founder from "./components/Founder.jsx";
+// import Second from "./components/Second.jsx";
+// import Long from "./components/Long.jsx";
+// import Industrialapplication from "./components/Industrialapplication.jsx";
+// import Wasteapplication from "./components/Wasteapplication.jsx";
+// import Founder from "./components/Founder.jsx";
 import Footer from "./components/Footer.jsx";
-import Blogs from "./components/Blogs.jsx";
-import blogspage from "./components/Blogspage.jsx";
+// import Blogs from "./components/Blogs.jsx";
+// import blogspage from "./components/Blogspage.jsx";
 import Blogspage from "./components/Blogspage.jsx";
-import ApplicationByWaste from "./components/ApplicationByWaste.jsx";
-import OurTechnologies from "./components/OurTechnologies.jsx";
+// import ApplicationByWaste from "./components/ApplicationByWaste.jsx";
+// import OurTechnologies from "./components/OurTechnologies.jsx";
 import Petro from "./components/industrial/Petro.jsx";
 import {
   createBrowserRouter,
