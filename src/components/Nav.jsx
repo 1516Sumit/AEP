@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Button, Modal, Form } from "react-bootstrap";
 import logo from "../logo/image.png";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import conimg from "../img/image copy 6.png";
+// import conimg from "../img/image copy 6.png";
 
 const MyNavbar = () => {
   const [show, setShow] = useState(false);
