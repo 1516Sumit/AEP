@@ -27,6 +27,7 @@ import Agriculture from "./components/industrial/Agriculture.jsx";
 import Fmcg from "./components/industrial/Fmcg.jsx";
 import Waste from "./components/industrial/Waste.jsx";
 import Rubber from "./components/industrial/Rubber.jsx";
+import Transport from "./components/industrial/Transport.jsx";
 import AgriculturalWaste from "./components/applicationwaste/AgriculturalWaste.jsx";
 import BioHazardWaste from "./components/applicationwaste/BioHazardWaste.jsx";
 import FuelWaste from "./components/applicationwaste/FuelWaste.jsx";
@@ -62,6 +63,7 @@ function App() {
         <Route path="fmcg" element={<Fmcg />} />
         <Route path="waste" element={<Waste />} />
         <Route path="rubber" element={<Rubber />} />
+        <Route path="transport" element={<Transport />} />
         <Route path="agriculturalWaste" element={<AgriculturalWaste />} />
         <Route path="bioHazardWaste" element={<BioHazardWaste />} />
         <Route path="fuelWaste" element={<FuelWaste />} />

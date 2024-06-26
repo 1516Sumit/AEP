@@ -5,12 +5,27 @@ function Fmcg() {
   return (
     <Props
       heading="Plastic Product and FMCG industry"
-      para="*  Warehousing and logistics use a lot of various plastic packaging, generally soft plastics like polyolephins, PE, LDPE, etc plus Polystyrene separation/ infill for TV boxes, plastic pallets, HDPE plastic ties, security plastic tags, plastic seals, PVC pipes. PVC here represents a special hazard danger for processing as it contains Chlorine, we can remove safely as salts.
- 
-  * Plastic packaging for foods & beverages has evolved now to use a variety of plastics like PE, LDPE, HDPE, PET, PTF, PVC, etc, often with an extra layer of metallic foil. Add plastic straws and lids, jars and other plastic food containers to the mix.
-   
-  *  Retail shopping centres and FMCG - Fast Moving Consumer Goods industry create a lot of packaging plastics and paper waste with occasional wooden crates and steel stripes/ties in the mix.
-  The problem is that most packaging waste comes all together, barely separated at the source of collection. We have solved the problem by adding a waste mix shredding module before unique pyrolysis processing. It is thermo-chemical decomposition of the plastics/ wood mix back to elements/ molecules in a controlled environment of the preheated pyrolysis reactor without oxygen (hence no O2 burning) under specific temperature & pressure parameters. Our recycling plant can handle ANY plastic waste mix without prior separation, processing plastic waste to the energy of choice (synthetic gas mix similar to LNG, syn fuels, electricity, green hydrogen) and providing extra utilities/ products like industrial heat, industrial cold by co-generation, freshwater harvesting from air on industrial scale, hot water or steam, carbon black powder or carbon fuel pellets, and carbon credit certificates, as waste processing is net carbon negative.Please, see Mixed Plastic Waste recycling presentation here."
+      para="Warehousing and logistics extensively utilize various plastic packaging materials, primarily soft plastics like polyolefins, PE, and LDPE, as well as polystyrene for separation and infill in TV boxes. Plastic pallets, HDPE plastic ties, security plastic tags, plastic seals, and PVC pipes are also common. PVC, in particular, poses a special hazard due to its chlorine content, which we can safely remove as salts during processing."
+
+      para1="Plastic packaging for foods and beverages has evolved to include a variety of plastics such as PE, LDPE, HDPE, PET, PTF, and PVC, often with an additional layer of metallic foil. This category also includes plastic straws, lids, jars, and other plastic food containers."
+
+      para2="Retail shopping centers and the Fast Moving Consumer Goods (FMCG) industry generate a substantial amount of packaging waste. This waste includes a mix of plastics and paper, with occasional wooden crates and steel stripes or ties."
+
+      para3="The challenge with packaging waste is that it is rarely separated at the source of collection, resulting in a mixed waste stream. This complexity necessitates innovative solutions for effective recycling and waste management."
+
+      para4="We have addressed this issue by incorporating a waste mix shredding module before the pyrolysis processing stage. This initial shredding step ensures that the waste is adequately prepared for further treatment."
+
+      para5="Pyrolysis, our chosen method, is a thermo-chemical decomposition process that breaks down plastics and wood back into their elemental or molecular forms. This process occurs in a controlled environment within a preheated pyrolysis reactor, without the presence of oxygen, thus preventing O2 burning."
+
+      para6="The pyrolysis reactor operates under specific temperature and pressure parameters, ensuring optimal decomposition of the waste materials. This controlled environment is crucial for achieving the desired conversion of waste into useful products."
+
+      para7="Our recycling plant is designed to handle any plastic waste mix without requiring prior separation. This capability significantly enhances the efficiency and flexibility of our operations, making it possible to process diverse waste streams effectively."
+
+      para8="The end products of our pyrolysis process include a range of energy options such as synthetic gas mix (similar to LNG), synthetic fuels, electricity, and green hydrogen. These energy products can be utilized for various industrial and commercial applications."
+
+      para9="In addition to energy production, our plant generates valuable by-products like industrial heat and cold through co-generation. We also harvest freshwater from the air on an industrial scale, produce hot water or steam, and create carbon black powder or carbon fuel pellets."
+
+      para10="One of the significant benefits of our process is that it is net carbon negative. This means that our waste processing not only prevents carbon emissions but also generates carbon credit certificates, contributing positively to the environment.."
     />
   );
 }

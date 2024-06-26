@@ -77,8 +77,7 @@ function Industrialapplication() {
                     Plastic Product & FMCG Industry
                   </h5>
                   <p className="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                  Food and beverage packaging now uses plastics (PE, LDPE, HDPE, PET, PTF, PVC) with metallic foil, straws, lids, and containers.
                   </p>
                 </div>
               </div>
@@ -98,8 +97,7 @@ function Industrialapplication() {
                   <img src={icon} alt="#"></img>
                   <h5 className="card-title">Waste Management Industry</h5>
                   <p className="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                  Waste management has evolved into a crucial part of the Circular economy, but public education on preliminary waste sorting is essential.
                   </p>
                 </div>
               </div>
@@ -119,8 +117,27 @@ function Industrialapplication() {
                     Rubber Industry
                   </h5>
                   <p className="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
+                  Recycling old tires and rubber goods is challenging due to their durability, but essential for resource recovery and energy extraction.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-4 my-2" data-aos="fade-up"
+            data-aos-anchor-placement="top-center">
+            <Link
+              to="transport"
+              className="text-black"
+              style={{ textDecoration: "none" }}
+            >
+              <div className="card">
+                <div className="card-body">
+                  <img src={icon} alt="#"></img>
+                  <h5 className="card-title">
+                  Transport & Logistics Decarbonization 
+                  </h5>
+                  <p className="card-text">
+                  We help decarbonize transport fuels by creating a stable emulsion of fuel oil and water, suitable for standard engines.
                   </p>
                 </div>
               </div>
