@@ -39,7 +39,7 @@ function Home() {
         >
           <h1
             id="hi"
-            className="text-7xl lg:text-8xl md:!mt-40 lg:mt-0"
+            className="text-6xl lg:text-7xl md:!mt-40 lg:mt-0"
           >
             ⁠Carbon emission negative and energy effective solutions
           </h1>
