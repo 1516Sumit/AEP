@@ -22,7 +22,7 @@ function ApplicationByWaste() {
     >
       <div className="w-[85vw] lg:w-2/4 text-white" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-        <h6 style={{ color: "#FF6E1D" }}>Application</h6>
+        <h6 style={{ color: "#2C3539" }}>Application</h6>
         <h2>
           <u className="underline">Application</u> By Wastes
         </h2>
@@ -58,7 +58,7 @@ function ApplicationByWaste() {
             >
               <div class="card">
                 <div class="card-body">
-                  <img src={icon}></img>
+                  <img src={icon} alt="#"></img>
                   <h5 class="card-title">Agricultural Waste</h5>
                   <p class="card-text">
                     With supporting text below as a natural lead-in to
@@ -78,7 +78,7 @@ function ApplicationByWaste() {
             >
               <div class="card">
                 <div class="card-body">
-                  <img src={icon}></img>
+                  <img src={icon}  alt="#"></img>
                   <h5 class="card-title">Fuel Waste</h5>
                   <p class="card-text">
                     With supporting text below as a natural lead-in to
@@ -99,7 +99,7 @@ function ApplicationByWaste() {
             >
               <div class="card">
                 <div class="card-body">
-                  <img src={icon}></img>
+                  <img src={icon}  alt="#"></img>
                   <h5 class="card-title">Plastic Waste</h5>
                   <p class="card-text">
                     With supporting text below as a natural lead-in to
@@ -119,7 +119,7 @@ function ApplicationByWaste() {
             >
               <div class="card">
                 <div class="card-body">
-                  <img src={icon}></img>
+                  <img src={icon}  alt="#"></img>
                   <h5 class="card-title">Municipal Solid Waste </h5>
                   <p class="card-text">
                     With supporting text below as a natural lead-in to
@@ -140,7 +140,7 @@ function ApplicationByWaste() {
             >
               <div class="card">
                 <div class="card-body">
-                  <img src={icon}></img>
+                  <img src={icon}  alt="#"></img>
                   <h5 class="card-title">Rubber Waste</h5>
                   <p class="card-text">
                     With supporting text below as a natural lead-in to
@@ -159,7 +159,7 @@ function ApplicationByWaste() {
             >
               <div class="card">
                 <div class="card-body">
-                  <img src={icon}></img>
+                  <img src={icon}  alt="#"></img>
                   <h5 class="card-title">Bio Hazard Waste</h5>
                   <p class="card-text">
                     With supporting text below as a natural lead-in to

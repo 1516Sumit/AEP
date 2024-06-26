@@ -19,7 +19,7 @@ function OurTechnologies() {
           >
             <div class="card">
               <div class="card-body">
-                <img src={icon}></img>
+                <img src={icon}  alt="#"></img>
                 <h5 class="card-title">Our innovation in Pyrolysis</h5>
                 <p class="card-text">
                 Advanced pyrolysis processing of waste to clean Energy of choice without burning oxygen, without exhaust or emissions.
@@ -37,7 +37,7 @@ function OurTechnologies() {
           >
             <div class="card">
               <div class="card-body">
-                <img src={icon}></img>
+                <img src={icon}  alt="#"></img>
                 <h5 class="card-title">Pulse Dryer</h5>
                 <p class="card-text">
                 Pulse drying rapidly reduces material moisture content to 10%, achieving 90% removal efficiently.
@@ -55,7 +55,7 @@ function OurTechnologies() {
           >
             <div class="card">
               <div class="card-body">
-                <img src={icon}></img>
+                <img src={icon} alt="#"></img>
                 <h5 class="card-title">Shock Condensation</h5>
                 <p class="card-text">
                 Our tech rapidly converts gases to liquids via shock condensation, producing synthetic fuels without traditional refinery towers.
@@ -75,7 +75,7 @@ function OurTechnologies() {
           >
             <div class="card">
               <div class="card-body">
-                <img src={icon}></img>
+                <img src={icon}  alt="#"></img>
                 <h5 class="card-title">Gas Cleansing</h5>
                 <p class="card-text">
                 Ionization technology cleanses industrial flue gas, effectively removing CO and CO2, ensuring a safer and cleaner environment.
@@ -93,7 +93,7 @@ function OurTechnologies() {
           >
             <div class="card">
               <div class="card-body">
-                <img src={icon}></img>
+                <img src={icon} alt="#"></img>
                 <h5 class="card-title">Waste Water Reacycling</h5>
                 <p class="card-text">
                 Developing large-scale technology to harvest fresh water from atmospheric air, addressing industrial water needs sustainably and efficiently.
@@ -111,7 +111,7 @@ function OurTechnologies() {
           >
             <div class="card">
               <div class="card-body">
-                <img src={icon}></img>
+                <img src={icon} alt="#"></img>
                 <h5 class="card-title">
                   Powder Battery Reduction Oxidation / Flow Battery
                 </h5>
@@ -133,7 +133,7 @@ function OurTechnologies() {
           >
             <div class="card">
               <div class="card-body">
-                <img src={icon}></img>
+                <img src={icon} alt="#"></img>
                 <h5 class="card-title">
                   Pyrolysis of Methane into Green Hydrogen
                 </h5>

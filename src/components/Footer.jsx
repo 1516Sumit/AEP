@@ -6,7 +6,7 @@ function Footer() {
     <div className="h-auto md:h-[50vh] bg-black p-5 m-0 w-full flex flex-col justify-around gap-10"
     data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
-      <div className="bg-[#FF6E1D] w-full flex justify-between items-center flex-col md:flex-row gap-10 md:gap-0 h-auto md:h-[10vh] rounded-md p-12">
+      <div className="bg-[#2C3539] w-full flex justify-between items-center flex-col md:flex-row gap-10 md:gap-0 h-auto md:h-[10vh] rounded-md p-12">
         <div className="text-white">
           <span className="text-2xl lg:text-3xl">
             It will help you improve your writing<br /> & bring ideas more

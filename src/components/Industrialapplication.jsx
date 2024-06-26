@@ -15,7 +15,7 @@ function Industrialapplication() {
     >
       <div className="w-[85vw] md:w-8/12" id="indus" style={{ margin: "0px" }} data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-        <h6 style={{ color: "#FF6E1D" }}>Application</h6>{" "}
+        <h6 style={{ color: "#2C3539" }}>Application</h6>{" "}
         <h2>
           <u className="underline">Industrial</u> Application
         </h2>
@@ -35,7 +35,7 @@ function Industrialapplication() {
             >
               <div className="card ">
                 <div className="card-body">
-                  <img src={icon}></img>
+                  <img src={icon}  alt="#"></img>
                   <h5 className="card-title">Agriculture and Food industry</h5>
                   <p className="card-text">
                   Annual global Manure production output is x3 times larger than of the global Coal mining.
@@ -53,7 +53,7 @@ function Industrialapplication() {
             >
               <div className="card  ">
                 <div className="card-body ">
-                  <img src={icon1}></img>
+                  <img src={icon1}  alt="#"></img>
                   <h5 className="card-title">PetroChemical Industry</h5>
                   <p className="card-text">
                   We use specialized modules to recycle petrochemical waste, removing impurities and sulfur for energy or refining.
@@ -71,7 +71,7 @@ function Industrialapplication() {
             >
               <div className="card">
                 <div className="card-body">
-                  <img src={icon}></img>
+                  <img src={icon}  alt="#"></img>
                   <h5 className="card-title">
                     {" "}
                     Plastic Product & FMCG Industry
@@ -95,7 +95,7 @@ function Industrialapplication() {
             >
               <div className="card">
                 <div className="card-body">
-                  <img src={icon}></img>
+                  <img src={icon} alt="#"></img>
                   <h5 className="card-title">Waste Management Industry</h5>
                   <p className="card-text">
                     With supporting text below as a natural lead-in to
@@ -114,7 +114,7 @@ function Industrialapplication() {
             >
               <div className="card">
                 <div className="card-body">
-                  <img src={icon}></img>
+                  <img src={icon} alt="#"></img>
                   <h5 className="card-title">
                     Rubber Industry
                   </h5>
