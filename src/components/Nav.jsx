@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Navbar, Nav, NavDropdown, Button, Modal, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../logo/image.png";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,44 +15,45 @@ const MyNavbar = () => {
   return (
     <>
       <Navbar id="navi" expand="lg" bg="transparent" variant="light">
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/">
           <img id="aep" className="bg-transparent" src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNavDropdown" />
         <Navbar.Collapse id="navbarNavDropdown" className="justify-content-end text-white">
           <Nav>
-            <Nav.Link className="font-poppins text-white" href="#">
+            <Nav.Link className="font-poppins text-white" as={Link} to="#">
               About
             </Nav.Link>
             <NavDropdown className="text-white" title={<span className="text-white">Services</span>} id="navbarDropdownMenuLink">
-              <NavDropdown.Item href="#">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#">Action</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#">Another action</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="#">Something else here</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
               title={<span className="text-white">Application by waste</span>}
               id="navbarDropdownMenuLink"
               className="text-white"
             >
-              <NavDropdown.Item href="agriculturalWaste">Agricultural Waste</NavDropdown.Item>
-              <NavDropdown.Item href="fuelWaste">Fuel Waste</NavDropdown.Item>
-              <NavDropdown.Item href="plastic">Plastic Waste</NavDropdown.Item>
-              <NavDropdown.Item href="municipalWaste">Municipal Solid Waste</NavDropdown.Item>
-              <NavDropdown.Item href="rubberWaste">Rubber Waste</NavDropdown.Item>
-              <NavDropdown.Item href="bioHazardWaste">Bio Hazard Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="agriculturalWaste">Agricultural Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="fuelWaste">Fuel Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="plastic">Plastic Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="municipalWaste">Municipal Solid Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="rubberWaste">Rubber Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="bioHazardWaste">Bio Hazard Waste</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
               title={<span className="text-white">Industrial Application</span>}
               id="navbarDropdownMenuLink"
               className="text-white"
             >
-              <NavDropdown.Item href="agriculture">Agriculture and Food industry</NavDropdown.Item>
-              <NavDropdown.Item href="petro">PetroChemical Industry</NavDropdown.Item>
-              <NavDropdown.Item href="fmcg">Plastic Product & FMCG Industry</NavDropdown.Item>
-              <NavDropdown.Item href="waste">Waste Management Industry</NavDropdown.Item>
-              <NavDropdown.Item href="rubber">Rubber Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="agriculture">Agriculture and Food industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="petro">PetroChemical Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="fmcg">Plastic Product & FMCG Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="waste">Waste Management Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="rubber">Rubber Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="transport">Transport & Logistics Decarbonization </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link className="text-white" href="#" onClick={handleShow}>
+            <Nav.Link className="text-white" onClick={handleShow}>
               Contact Us
             </Nav.Link>
           </Nav>
