@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from '../../img/image3.png';
 
 function Fmcg() {
   return (
     <Props
       heading="Plastic Product and FMCG industry"
+      background={background}
       para="Warehousing and logistics extensively utilize various plastic packaging materials, primarily soft plastics like polyolefins, PE, and LDPE, as well as polystyrene for separation and infill in TV boxes. Plastic pallets, HDPE plastic ties, security plastic tags, plastic seals, and PVC pipes are also common. PVC, in particular, poses a special hazard due to its chlorine content, which we can safely remove as salts during processing."
 
       para1="Plastic packaging for foods and beverages has evolved to include a variety of plastics such as PE, LDPE, HDPE, PET, PTF, and PVC, often with an additional layer of metallic foil. This category also includes plastic straws, lids, jars, and other plastic food containers."

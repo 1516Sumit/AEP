@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from '../../img/img7.jpeg';
 
 function Petro() {
   return (
     <Props
       heading="Petrochemical Industry"
+      background={background}
       para="Petrochemical waste and oil refinery by-products can vary significantly, presenting a broad range of challenges for effective management and recycling. To address these issues, we have focused on the most common and problematic types of waste, ensuring our solutions target the critical areas."
 
       para1="Crude oil spills mixed with water, soil, and sand, often collected after accidents or spill clean-ups. This type of waste poses significant environmental hazards and requires specialized treatment to mitigate its impact."

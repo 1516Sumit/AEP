@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image5.png";
 
 function Waste() {
   return (
     <Props
       heading="Waste Management Industry"
+      background={background}
       para="The waste management industry has come a long way from simply collecting and dumping waste to becoming an essential part of the Circular Economy. The main challenge remains educating the general population and major clients on the importance of preliminary sorting of solid municipal waste at the source."
 
       para1=" Another significant issue is the contamination of household city waste with organic and food waste, making it inefficient to process mixed waste using gasification or pyrolysis. Countries like Sweden, Germany, Japan, and Lithuania, which use multiple bins for waste segregation, achieve recycling and resource recovery efficiencies of over 90%, compared to 1-9% in Australia and parts of Asia."

@@ -1,9 +1,11 @@
 import React from 'react';
 import Props from "../Props";
+import background from "../../img/image6.png";
 
 function Transport() {
   return (
    <Props  heading="Transport & Logistics Decarbonization "
+   background={background}
       para="We contribute to the decarbonization of transport and logistics fuels during the transition to cleaner energy use. Our developed stand-alone complex specializes in mixing and processing previously unmixable fuel oil with 20% freshwater into an exceptionally stable emulsion. This emulsion exhibits strong adhesion between heavier water and lighter hydrocarbon molecules without altering the chemical composition required by standard road, railway, marine propulsion engines, and boiler fuels, ranging from diesel D2/D4 to FO/HFO."
 
       para1="Our process involves the meticulous removal of sulfur, water, ash impurities, achieved through a series of advanced techniques including mixers, filters, and ultrasound. The resulting water-fuel emulsion has a distinctive yellowish hue and remains highly stable without any separation issues in fuel storage for over 12 months. However, the optimal performance is realized when used within standard engines and boilers. This emulsion burns ten times more efficiently than standard fuels and emits ten times fewer harmful carbon emissions, significantly enhancing sustainability while reducing adverse impacts on engines and the environment. The potential savings in fuel costs and the positive environmental impact are substantial."

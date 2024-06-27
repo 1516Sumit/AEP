@@ -1,5 +1,5 @@
 import React from "react";
-import thisback from "../img/img1.png";
+import thisback from "../img/image6.png";
 import icon from "../icons/image copy 7.png";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ function ApplicationByWaste() {
       style={{
         display: "flex",
         padding: "5vw 5vw 5vw 5vw",
-        background: `url(${thisback})`,
+        background: `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(${thisback})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         margin: "20px 0 20px 0",

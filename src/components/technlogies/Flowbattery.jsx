@@ -1,10 +1,13 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image11.png";
+
 
 function Flowbattery() {
   return (
     <Props
       heading="Powder Battery Reduction Oxidation / Flow Battery"
+      background={background}
       para="The LEST power plant utilizes PBR modules, each with a capacity of 7.8 kWh, stacked to create a robust and scalable energy storage system. It's designed for simplicity and self-containment, offering cost-effective energy generation and controlled release capabilities."
 
       para1="Designed for both energy generation and storage, LEST serves as a versatile load balancing system within public power grids.It efficiently manages energy consumption during peak and off-peak periods, enhancing grid stability."

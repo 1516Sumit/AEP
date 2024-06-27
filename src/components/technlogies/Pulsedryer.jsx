@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image3.png";
 
 function Pulsedryer() {
   return (
     <Props
       heading="Pulse Dryer"
+      background={background}
       para="Custom-manufactured equipment tailored to the Customer's specifications for specific waste types, operating in continuous or cyclic modes, available in stationary and mobile versions for any climate."
 
       para1="Compliance with European air emissions standards and zero emissions of flue gases in the 'Pulsar-EL' and 'Potok-EL' lines, ensuring no environmental impact, discharge of contaminated water, ash, or sludge."

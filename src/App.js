@@ -43,6 +43,9 @@ import ShockCondensation from "./components/technlogies/ShockCondensation.jsx";
 import WasteWaster from "./components/technlogies/WasteWater.jsx";
 import Props from "./components/Props.jsx";
 
+
+import background from "./img/pexels-pixabay-221369.jpg";
+
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -52,7 +55,7 @@ function App() {
           path="blogs"
           element={
             <>
-              <Props heading="News & Blogs" sub="All Blogs Page" />
+              <Props heading="News & Blogs" sub="All Blogs Page" background={background}/>
               <Blogspage />
               <Footer/>
             </>

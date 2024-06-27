@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/img1.jpeg";
 
 function MethanePyrolysis() {
   return (
     <Props
       heading="Pyrolysis of Methane into Green Hydrogen"
+      background={background}
       para="AEP group team has developed this technology and designed the
   Plant module for secondary, continuous cycle, advanced pyrolysis of flue syn gas to pure hydrogen gas with a lot of carbon black & nano-carbon powder." 
   

@@ -1,9 +1,11 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image8.png";
 
 function Plastic() {
   return <Props heading="Plastic Wastes "
-  subHead="Our Solution"
+  background={background}
+  // subHead="Our Solution"
     para="Humans produce over 20 BLN mt of waste pa, plastic polymers share is 15-25%. Re-use, Re-fill, 
 Re-purpose efforts do not work for Waste Plastics Pollution , wrecking oceans, lands, tourism."
     para1="Biosphere pollution/ Carbon emissions have reached critical point. Climate action is overdue. 

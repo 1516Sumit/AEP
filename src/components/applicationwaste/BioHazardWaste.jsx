@@ -1,8 +1,11 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/img1.jpeg";
+
 
 function BioHazardWaste() {
   return <Props heading="Biohazard Wastes" 
+  background={background}
     para="Diverse Nature: Hazardous waste from bio-labs, medical facilities, and pharmaceuticals includes infectious materials, chemicals, sharps, and expired medications, necessitating careful management."
 
 para1="Health Risks: Exposure to biohazardous waste can lead to infections, injuries from sharps, and contamination, posing significant health risks to healthcare workers and the environment."

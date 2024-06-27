@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image.png";
 
 function AgriculturalWaste() {
   return (
     <Props
       heading="Agriculture Waste"
+      background={background}
       sub=""
       para="Organic waste represents a significant challenge and opportunity in the realm of waste management, particularly due to its volume and potential for resource recovery. At AEP ENG, we have developed advanced technologies, particularly through our Pulsar-BIO recycling plant, aimed at maximizing the environmental, social, and economic value extracted from organic waste."
 

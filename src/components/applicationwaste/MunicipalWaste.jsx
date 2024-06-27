@@ -1,10 +1,13 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image9.png";
+
 
 function MunicipalWaste() {
   return (
     <Props
       heading="Municipal Waste"
+      background={background}
       para="MSW quantities soar globally due to population consumption, creating massive waste challenges measured in billions of metric tons annually, necessitating innovative solutions."
 
 para1="Challenges in waste management encompass collection, transportation, storage, sorting, and recycling, demanding efficient systems to mitigate environmental impact."

@@ -1,10 +1,13 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image10.png";
+
 
 function RubberWaste() {
   return (
     <Props
       heading="Rubber Wastes"
+      background={background}
       para="Rubber goods, such as end-of-lifecycle tires and conveyor belts from various industries, are ideal candidates for pyrolysis recycling and resource recovery, extracting energy from rubber waste efficiently."
 
 para1="In 2021, AEP ENG revamped the original Pulsar design into a modular, flexible, and multifunctional utility complex akin to a LEGO game, capable of waste disposal, energy transformation, industrial heat or cold supply, and even harvesting fresh water from air on an industrial scale."

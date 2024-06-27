@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image11.png";
 
 function WasteWater() {
   return (
     <Props
       heading="Waste Water recycling"
+      background={background}
       para="Humanity faces escalating challenges like population growth, waste crises, and environmental degradation. AEP offers a solution with our innovative, self-sufficient, and scalable waste recycling plants."
 
       para1="Using abundant waste-derived sustainable energy, AEP plants can harvest industrial-scale fresh water from atmospheric air alongside managing waste, generating energy, and providing industrial utilities."

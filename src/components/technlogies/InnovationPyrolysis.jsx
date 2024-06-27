@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image12.png";
 
 function InnovationPyrolysis() {
   return (
     <Props
       heading="Our Innovation in Pyrolysis"
+      background={background}
       para="Over nearly a decade, our intensive R&D efforts have refined pyrolysis technology, addressing inherent challenges like pipe clogging and carbon emissions. Our breakthroughs enable seamless, continuous processing and efficient management of heavy paraffins and carbon black."
 
       para1="The modular design of our pyrolysis systems ensures a closed-loop operation that minimizes water and fuel consumption while eliminating discharge into the biosphere. This approach guarantees zero emissions, aligning with stringent environmental standards."

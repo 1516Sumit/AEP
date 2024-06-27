@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from '../../img/img1.png';
 
 function Agriculture() {
   return (
     <Props
       heading="Agricultural & Food Industry"
+      background={background}
       para="Biomass, sewerage, and organic sediment from natural waterways can be processed through gasification and pyrolysis to produce energy and soil improvers. Not every type of biomass waste can be recycled efficiently with high yields of synthetic gas. Generally, plant-based oil cultures like sunflower kernel or palm oil kernel waste, coconut fiber, and uncontaminated organic biomass or sediment are ideal for efficient resource and energy recovery. These processes cater to the needs of small and medium-sized enterprises (SMEs) and support local circular economies."
 
       para1="Fresh, high-moisture animal farm manure from birds, pigs, cattle, horses, sheep, camels, and even elephants can be processed via pyrolysis. This method produces sterilized organic fertilizers, available in both liquid and granulated forms, for immediate use through pulse drying technology. Additionally, energy can be extracted in the form of synthetic gas similar to liquefied natural gas (LNG), synthetic fuels, electricity, or green hydrogen. By using extra modules, the quality and quantity of output products are significantly better, more efficient, and environmentally friendly compared to traditional anaerobic digestion technology for manure processing."

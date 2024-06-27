@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image9.png";
 
 function ShockCondensation() {
   return (
     <Props
       heading="Shock Condensation"
+      background={background}
       para="Our advanced technology enables the conversion of any gaseous substance into liquid by adhering to specific condensation temperature parameters for the substance being processed. For instance, to convert water steam into liquid, we need to cool the steam to its condensation point by rapidly lowering its temperature. This principle applies universally to all gases. The temperature reduction can be achieved through various methods, such as rapid gas expansion and cooling by pressure reduction, cryogenic technology, membranes, or other techniques."
 
 para1="In our system, we utilize a combination of these methods to exercise complete control over the phase transitions (gas, liquid, solid) within a fully regulated environment inside our specialized condensation module. We have mastered the art of shock condensation, which allows us to reduce the temperature of gases by several hundred degrees Celsius (ranging from 10 to 700 degrees) in a millisecond, depending on the requirements."

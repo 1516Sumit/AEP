@@ -1,5 +1,5 @@
 import React from "react";
-import oilimg from "../img/image copy 4.png";
+import oilimg from "../img/image4.png";
 import icon from "../icons/image copy 7.png";
 import icon1 from "../icons/image copy 8.png";
 import { Link } from "react-router-dom";

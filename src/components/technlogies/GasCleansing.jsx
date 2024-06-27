@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image7.png";
 
 function GasCleansing() {
   return (
     <Props
       heading="Gas Cleansing"
+      background={background}
       para="AEP ENG employs cutting-edge ionization and cold plasma technologies for purifying industrial flue gases, drawing on expertise cultivated in aerospace and avionics industries. These advanced methods are pivotal in addressing complex chemical compositions and particulate matter found in industrial emissions."
 
       para1="Initial purification begins with gases from the pyrolysis reactor entering a specially designed mechanical vortex cyclone filter. This component efficiently separates solid particles from the gas stream, achieving remarkable reductions in particle pollution levels at microscopic scales."

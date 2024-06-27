@@ -1,10 +1,12 @@
 import React from "react";
 import Props from "../Props";
+import background from "../../img/image7.png";
 
 function FuelWaste() {
   return (
     <Props
       heading="Fuel Waste "
+      background={background}
       para="This waste type requires a sophisticated approach with preliminary waste processing to recover usable resources effectively. Given the complexities involved, it is essential to utilize advanced technologies to handle the intricate properties of fuel oil waste, spills, sludge, sulphur, and mercaptans."
 
 para1="At stage one, water is meticulously removed from the waste. This initial step is crucial because the presence of water can significantly hinder subsequent processing steps. Specialized equipment ensures that the water extraction process is thorough and efficient, setting the stage for the next steps."

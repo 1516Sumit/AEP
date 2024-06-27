@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import watsapp from "../icons/whatsapp (1).png";
-import background from "../img/image.png";
 import Topper from "./Topper";
 import MyNavbar from "./MyNavbar";
 import Footer from "./Footer";
@@ -17,8 +16,9 @@ function Props(props) {
   return (
     <>
       <div
+       className="bg-cover bg-no-repeat h-screen w-screen"
         style={{
-          backgroundImage: `url(${background})`,
+          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),  url(${props.background})`,
           height: "100vh",
         }}
       >
