@@ -1,7 +1,15 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const location = useLocation();
+
+  const handleLinkClick = (e, path) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+    }
+  };
   return (
     <div className="h-auto md:h-[50vh] bg-black p-5 m-0 w-full flex flex-col justify-around gap-10"
     data-aos="fade-up"
@@ -25,7 +33,7 @@ function Footer() {
       <div className="flex justify-around flex-col md:flex-row items-start gap-10 md:gap-0 md:items-center text-white">
         <div className="flex flex-col">
           <h6 className="mb-2">Company</h6>
-          <Link className="text-decoration-none text-white" to="about" >About</Link>
+          <Link className="text-decoration-none text-white" to="/about" onClick={(e) => handleLinkClick(e, '/about')}>About</Link>
           <Link className="text-decoration-none text-white" href="/" >Feature</Link>
           <Link className="text-decoration-none text-white" href="/" >Works</Link>
           <Link className="text-decoration-none text-white" href="/" >Career</Link>

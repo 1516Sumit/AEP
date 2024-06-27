@@ -1,28 +1,18 @@
-// import logo from "./logo.svg";
 import "./App.css";
-// import Nav from "./components/Nav.jsx";
 
-// import Topper from "./components/Topper.jsx";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Home from "./components/Home.jsx";
-
-// import Second from "./components/Second.jsx";
-// import Long from "./components/Long.jsx";
-// import Industrialapplication from "./components/Industrialapplication.jsx";
-// import Wasteapplication from "./components/Wasteapplication.jsx";
-// import Founder from "./components/Founder.jsx";
 import Footer from "./components/Footer.jsx";
-// import Blogs from "./components/Blogs.jsx";
-// import blogspage from "./components/Blogspage.jsx";
 import Blogspage from "./components/Blogspage.jsx";
-// import ApplicationByWaste from "./components/ApplicationByWaste.jsx";
-// import OurTechnologies from "./components/OurTechnologies.jsx";
 import Petro from "./components/industrial/Petro.jsx";
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-  Route,
-} from "react-router-dom";
+// import {
+//   createBrowserRouter,
+//   createRoutesFromElements,
+//   RouterProvider,
+//   Route,
+// } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Agriculture from "./components/industrial/Agriculture.jsx";
 import Fmcg from "./components/industrial/Fmcg.jsx";
 import Waste from "./components/industrial/Waste.jsx";
@@ -48,47 +38,60 @@ import background from "./img/pexels-pixabay-221369.jpg";
 import About from "./components/About.jsx";
 
 function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route
-          path="blogs"
-          element={
-            <>
-              <Props heading="News & Blogs" sub="All Blogs Page" background={background}/>
-              <Blogspage />
-              <Footer/>
-            </>
-          }
-        />
-        <Route path="agriculture" element={<Agriculture />} />
-        <Route path="petro" element={<Petro />} />
-        <Route path="fmcg" element={<Fmcg />} />
-        <Route path="waste" element={<Waste />} />
-        <Route path="rubber" element={<Rubber />} />
-        <Route path="transport" element={<Transport />} />
-        <Route path="agriculturalWaste" element={<AgriculturalWaste />} />
-        <Route path="bioHazardWaste" element={<BioHazardWaste />} />
-        <Route path="fuelWaste" element={<FuelWaste />} />
-        <Route path="municipalWaste" element={<MunicipalWaste />} />
-        <Route path="plastic" element={<Plastic />} />
-        <Route path="rubberWaste" element={<RubberWaste />} />
-        <Route
-          path="OurInnovationInPyrolysis"
-          element={<InnovationPyrolysis />}
-        />
-        <Route path="PulseDryer" element={<Pulsedryer />} />
-        <Route path="ShockCondensation" element={<ShockCondensation />} />
-        <Route path="GasCleansing" element={<GasCleansing />} />
-        <Route path="WasteWaterReacycling" element={<WasteWaster />} />
-        <Route path="FlowBattery" element={<FlowBattery />} />
-        <Route path="PyrolysisofMethane" element={<MethanePyrolysis />} />
-      </>
-    )
-  );
-  return <RouterProvider router={router} />;
+
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  };
+
+  return (
+    <>
+      <Router>
+      <ScrollToTop />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="about" element={<About />} />
+          <Route
+            exact path="blogs"
+            element={
+              <>
+                <Props heading="News & Blogs" sub="All Blogs Page" background={background} />
+                <Blogspage />
+                <Footer />
+              </>
+            }
+          />
+          <Route exact path="agriculture" element={<Agriculture />} />
+          <Route exact path="petro" element={<Petro />} />
+          <Route exact path="fmcg" element={<Fmcg />} />
+          <Route exact path="waste" element={<Waste />} />
+          <Route exact path="rubber" element={<Rubber />} />
+          <Route exact path="transport" element={<Transport />} />
+          <Route exact path="agriculturalWaste" element={<AgriculturalWaste />} />
+          <Route exact path="bioHazardWaste" element={<BioHazardWaste />} />
+          <Route exact path="fuelWaste" element={<FuelWaste />} />
+          <Route exact path="municipalWaste" element={<MunicipalWaste />} />
+          <Route exact path="plastic" element={<Plastic />} />
+          <Route exact path="rubberWaste" element={<RubberWaste />} />
+          <Route
+            exact path="OurInnovationInPyrolysis"
+            element={<InnovationPyrolysis />}
+          />
+          <Route exact path="PulseDryer" element={<Pulsedryer />} />
+          <Route exact path="ShockCondensation" element={<ShockCondensation />} />
+          <Route exact path="GasCleansing" element={<GasCleansing />} />
+          <Route exact path="WasteWaterReacycling" element={<WasteWaster />} />
+          <Route exact path="FlowBattery" element={<FlowBattery />} />
+          <Route exact path="PyrolysisofMethane" element={<MethanePyrolysis />} />
+        </Routes>
+      </Router>
+    </>
+  )
 }
 
 export default App;

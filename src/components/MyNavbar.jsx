@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from 'react-router-dom';
 import { Navbar, Nav, NavDropdown, Button, Modal, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../logo/image.png";
@@ -12,16 +13,24 @@ const MyNavbar = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const location = useLocation();
+
+  const handleLinkClick = (e, path) => {
+    if (location.pathname === path) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <>
       <Navbar id="navi" expand="lg" bg="transparent" variant="light">
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/" onClick={(e) => handleLinkClick(e, '/')}>
           <img id="aep" className="bg-transparent" src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNavDropdown" />
         <Navbar.Collapse id="navbarNavDropdown" className="justify-content-end text-white">
           <Nav>
-            <Nav.Link className="font-poppins text-white" as={Link} to="about">
+            <Nav.Link  className="font-poppins text-white" as={Link} to="/about" onClick={(e) => handleLinkClick(e, '/about')}>
               About
             </Nav.Link>
             <NavDropdown className="text-white" title={<span className="text-white">Services</span>} id="navbarDropdownMenuLink">
@@ -34,24 +43,24 @@ const MyNavbar = () => {
               id="navbarDropdownMenuLink"
               className="text-white"
             >
-              <NavDropdown.Item as={Link} to="agriculturalWaste">Agricultural Waste</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="fuelWaste">Fuel Waste</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="plastic">Plastic Waste</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="municipalWaste">Municipal Solid Waste</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="rubberWaste">Rubber Waste</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="bioHazardWaste">Bio Hazard Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/agriculturalWaste" onClick={(e) => handleLinkClick(e, '/agriculturalWaste')}>Agricultural Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/fuelWaste" onClick={(e) => handleLinkClick(e, '/fuelWaste')}>Fuel Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/plastic" onClick={(e) => handleLinkClick(e, '/plastic')}>Plastic Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/municipalWaste" onClick={(e) => handleLinkClick(e, '/municipalWaste')}>Municipal Solid Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/rubberWaste" onClick={(e) => handleLinkClick(e, '/rubberWaste')}>Rubber Waste</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/bioHazardWaste" onClick={(e) => handleLinkClick(e, '/bioHazardWaste')}>Bio Hazard Waste</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
               title={<span className="text-white">Industrial Application</span>}
               id="navbarDropdownMenuLink"
               className="text-white"
             >
-              <NavDropdown.Item as={Link} to="agriculture">Agriculture and Food industry</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="petro">PetroChemical Industry</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="fmcg">Plastic Product & FMCG Industry</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="waste">Waste Management Industry</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="rubber">Rubber Industry</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="transport">Transport & Logistics Decarbonization </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/agriculture" onClick={(e) => handleLinkClick(e, '/agriculture')}>Agriculture and Food industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/petro" onClick={(e) => handleLinkClick(e, '/petro')}>PetroChemical Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/fmcg" onClick={(e) => handleLinkClick(e, '/fmcg')}>Plastic Product & FMCG Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/waste" onClick={(e) => handleLinkClick(e, '/waste')}>Waste Management Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/rubber" onClick={(e) => handleLinkClick(e, '/rubber')}>Rubber Industry</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/transport" onClick={(e) => handleLinkClick(e, '/transport')}>Transport & Logistics Decarbonization </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link className="text-white" onClick={handleShow}>
               Contact Us
