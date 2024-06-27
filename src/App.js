@@ -45,12 +45,14 @@ import Props from "./components/Props.jsx";
 
 
 import background from "./img/pexels-pixabay-221369.jpg";
+import About from "./components/About.jsx";
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
         <Route
           path="blogs"
           element={

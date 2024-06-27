@@ -25,7 +25,7 @@ function Footer() {
       <div className="flex justify-around flex-col md:flex-row items-start gap-10 md:gap-0 md:items-center text-white">
         <div className="flex flex-col">
           <h6 className="mb-2">Company</h6>
-          <Link className="text-decoration-none text-white" to="blogs" >About</Link>
+          <Link className="text-decoration-none text-white" to="about" >About</Link>
           <Link className="text-decoration-none text-white" href="/" >Feature</Link>
           <Link className="text-decoration-none text-white" href="/" >Works</Link>
           <Link className="text-decoration-none text-white" href="/" >Career</Link>

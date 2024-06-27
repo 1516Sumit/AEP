@@ -21,7 +21,7 @@ const MyNavbar = () => {
         <Navbar.Toggle aria-controls="navbarNavDropdown" />
         <Navbar.Collapse id="navbarNavDropdown" className="justify-content-end text-white">
           <Nav>
-            <Nav.Link className="font-poppins text-white" as={Link} to="#">
+            <Nav.Link className="font-poppins text-white" as={Link} to="about">
               About
             </Nav.Link>
             <NavDropdown className="text-white" title={<span className="text-white">Services</span>} id="navbarDropdownMenuLink">
