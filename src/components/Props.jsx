@@ -58,32 +58,32 @@ function Props(props) {
         </div>
       </div>
       {props.para && (
-        <div className="flex flex-col gap-10 m-10 md:mt-32">
+        <div className="flex flex-col gap-10 my-10 mx-2 md:mt-32">
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para1}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para2}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para3}
           </p>
@@ -97,53 +97,53 @@ function Props(props) {
         <h1>{props.subHead}</h1>
       </div>
       {props.para4 && (
-        <><div className="flex flex-col gap-10 m-10">
+        <><div className="flex flex-col gap-10  my-10 mx-2 md:m-10">
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para4}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para5}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-lg md:text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para6}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-lg md:text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para7}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-lg md:text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para8}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-lg md:text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para9}
           </p>
           <p
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="text-center text-lg md:text-2xl px-40"
+            className="text-center text-lg md:text-2xl px-4 md:px-40"
           >
             {props.para10}
           </p>
