@@ -1,5 +1,5 @@
 import React from "react";
-import building from "../img/image copy 2.png";
+import building from "../img/image copy 2.jpg";
 // import { height, width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 
 function Second() {
@@ -20,9 +20,9 @@ function Second() {
         </div>
         <div id="text-box" className=" w-full md:w-2/4 md:h-[70vh] pt-8 md:p-8 lg:p-16" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-          <h6 style={{ color: "#2C3539" }}>our story</h6>
-          <h2 >AEP Technolgy</h2>
-          <hr style={{ width: "10vw", height: "5px", margin: "0", color: "#2C3539" }}></hr>
+          <h6 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>our story</h6>
+          <h2 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat"  }}>AEP Technolgy</h2>
+          <hr style={{ width: "10vw", height: "5px", margin: "0", color: "#191939", fontWeight:"bolder" }}></hr>
           <p className="buildText text-base">
           AEP Engineering, located at Stanislavowska 47, Wroclaw, Poland, is led by Vitaly Shablov, Ph.D. The company specializes in innovative manufacturing and engineering, focusing on waste processing, filtration, gasification, and energy-efficient technologies. With multiple divisions, including research labs and software development, AEP Engineering employs a skilled team of scientists, technologists, and IT professionals. They develop equipment for pyrolysis, fuel emulsions, gas purification, multi-fuel engines, and microbiological treatments. Their research center supports the development of alternative fuels and eco-friendly waste processing technologies, having completed over 25 innovative projects across various industries.
           </p>

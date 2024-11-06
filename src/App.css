@@ -54,8 +54,12 @@ nav {
   font-family: Cabinet;
   src: url(../src/fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Regular.otf);
 }
+@font-face {
+  font-family: Montserrat;
+  src: url(../src/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
 #hi {
-  font-family: Cabinet;
+  font-family: Montserrat;
   color: #fff;
   font-size: 90px;
   text-align: center;
@@ -81,7 +85,7 @@ nav {
   text-align: center;
 }
 #orange-button {
-  background: #2C3539;
+  background: #191939;
   color: #ffffff;
   padding: 1%;
 }
@@ -143,17 +147,17 @@ button {
 
 .underline{
   text-decoration: underline;
-  text-decoration-color: #2C3539;
+  text-decoration-color: #191939;
 }
 
 .big-text {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 60px;
   margin-bottom: 0%;
 }
 
 .small-text{
-  font-weight: 700;
+  font-weight: 900;
 }
 br {
   margin: 0%;
@@ -295,7 +299,7 @@ br {
 }
 
 .card:hover {
-  box-shadow: 8px 8px 8px #28282b;
+  box-shadow: 4px 4px 4px #a7a7ca;
   cursor: pointer;
   animation-name: border;
 }

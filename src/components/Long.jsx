@@ -9,41 +9,43 @@ function Long() {
   });
 
   return (
-    <div id="long" ref={ref} data-aos="fade-up"
+    <>
+      <div id="long" ref={ref} data-aos="fade-up"
         data-aos-anchor-placement="top-bottom">
-      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
-        data-aos-anchor-placement="top-center">
-        <span className="big-text">
-          {inView ? <CountUp duration={5} end={4} /> : '0'}k
-        </span>
-        <br />
-        <span className="small-text">Project Done</span>
+        <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+          data-aos-anchor-placement="top-center">
+          <span className="big-text">
+            {inView ? <CountUp duration={5} end={4} /> : '0'}k
+          </span>
+          <br />
+          <span className="small-text">Project Done</span>
+        </div>
+        <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+          data-aos-anchor-placement="top-center">
+          <span className="big-text">
+            {inView ? <CountUp duration={5} end={98} /> : '0'}%
+          </span>
+          <br />
+          <span className="small-text">Happy Clients</span>
+        </div>
+        <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+          data-aos-anchor-placement="top-center">
+          <span className="big-text">
+            {inView ? <CountUp duration={5} end={185} /> : '0'}+
+          </span>
+          <br />
+          <span className="small-text">Project Done</span>
+        </div>
+        <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
+          data-aos-anchor-placement="top-center">
+          <span className="big-text">
+            {inView ? <CountUp duration={5} end={23} /> : '0'}+
+          </span>
+          <br />
+          <span className="small-text">Professional Worker</span>
+        </div>
       </div>
-      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
-        data-aos-anchor-placement="top-center">
-        <span className="big-text">
-          {inView ? <CountUp duration={5} end={98} /> : '0'}%
-        </span>
-        <br />
-        <span className="small-text">Happy Clients</span>
-      </div>
-      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
-        data-aos-anchor-placement="top-center">
-        <span className="big-text">
-          {inView ? <CountUp duration={5} end={185} /> : '0'}+
-        </span>
-        <br />
-        <span className="small-text">Project Done</span>
-      </div>
-      <div style={{ textAlign: "center", color: "white" }} data-aos="fade-up"
-        data-aos-anchor-placement="top-center">
-        <span className="big-text">
-          {inView ? <CountUp duration={5} end={23} /> : '0'}+
-        </span>
-        <br />
-        <span className="small-text">Professional Worker</span>
-      </div>
-    </div>
+    </>
   );
 }
 

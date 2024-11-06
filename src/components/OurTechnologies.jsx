@@ -7,7 +7,7 @@ function OurTechnologies() {
   return (
     <div className="py-[5vw] px-[8vw]" data-aos="fade-up"
         data-aos-anchor-placement="top-bottom">
-      <h1 style={{ textAlign: "center" }} data-aos="fade-up"
+      <h1 style={{ textAlign: "center", color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }} data-aos="fade-up"
         data-aos-anchor-placement="top-center">Our Technologies</h1>
       <div className="row justify-content-center lg:justify-content-auto">
         <div class="col-sm-12 col-md-6 col-lg-4 my-2" data-aos="fade-up"

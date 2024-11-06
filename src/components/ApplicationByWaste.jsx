@@ -10,7 +10,7 @@ function ApplicationByWaste() {
       style={{
         display: "flex",
         padding: "5vw 5vw 5vw 5vw",
-        background: `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(${thisback})`,
+        background: `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(${thisback})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         margin: "20px 0 20px 0",
@@ -22,8 +22,8 @@ function ApplicationByWaste() {
     >
       <div className="w-[85vw] lg:w-2/4 text-white" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-        <h6 style={{ color: "#2C3539" }}>Application</h6>
-        <h2>
+        <h6 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>Application</h6>
+        <h2 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>
           <u className="underline">Application</u> By Wastes
         </h2>
         <p>

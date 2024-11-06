@@ -37,7 +37,7 @@ function Props(props) {
           <p id="home-p" className="text-white text-3xl ">
             {props.sub}
           </p>
-          <div
+          {/* <div
             id="buttons"
             className="flex flex-row items-center justify-center"
           >
@@ -54,7 +54,7 @@ function Props(props) {
                 alt="whatsapp-icon"
               ></img>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       {props.para && (

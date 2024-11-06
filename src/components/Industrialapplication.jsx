@@ -9,14 +9,14 @@ function Industrialapplication() {
     <div
       id="industry"
       style={{ display: "flex", justifyContent: "space-evenly", padding: "0" }}
-      className="gap-10 md:gap-0 md:h-[90vh] items-center"
+      className="gap-10 md:gap-0 lg:h-[90vh] items-center"
       data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"
     >
       <div className="w-[85vw] md:w-8/12" id="indus" style={{ margin: "0px" }} data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-        <h6 style={{ color: "#2C3539" }}>Application</h6>{" "}
-        <h2>
+        <h6 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>Application</h6>{" "}
+        <h2 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>
           <u className="underline">Industrial</u> Application
         </h2>
         <p className="p-i">

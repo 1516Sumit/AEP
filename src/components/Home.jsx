@@ -49,7 +49,7 @@ function Home() {
           >
             Carbon emission negative and energy effective solutions
           </p> */}
-          <div id="buttons" className="flex flex-row items-center justify-center">
+          {/* <div id="buttons" className="flex flex-row items-center justify-center">
             <button className="w-32" id="orange-button">Get a Quote {">"}</button>
             <button className="w-32" id="white-button">Get a Quote {">"}</button>
             <Link className="z-10 relative" target="_blank" to='https://wa.me/(+62) 888-800-212'>
@@ -59,7 +59,7 @@ function Home() {
                 alt="whatsapp-icon"
               ></img>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <Second />
