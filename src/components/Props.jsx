@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
-import watsapp from "../icons/whatsapp (1).png";
+// import { Link } from "react-router-dom";
+// import watsapp from "../icons/whatsapp (1).png";
 import Topper from "./Topper";
 import MyNavbar from "./MyNavbar";
 import Footer from "./Footer";

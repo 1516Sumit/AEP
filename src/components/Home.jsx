@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import watsapp from "../icons/whatsapp (1).png";
+// import watsapp from "../icons/whatsapp (1).png";
 import Topper from "./Topper";
 // import Nav from "./Nav";
-import background from "../img/hero.png";
+import background from "../img/hero.jpg";
 import Second from "./Second";
 import Long from "./Long";
 import Industrialapplication from "./Industrialapplication";
@@ -13,7 +13,6 @@ import OurTechnologies from "./OurTechnologies";
 import Founder from "./Founder";
 import Footer from "./Footer";
 import MyNavbar from "./MyNavbar";
-import { Link } from "react-router-dom";
 
 // Import founder images
 import founderImg1 from "../founder/image.jpg";
@@ -29,7 +28,7 @@ function Home() {
     <>
       <div
         className="bg-cover bg-no-repeat h-screen w-screen"
-        style={{ backgroundImage: `url(${background})` }}
+        style={{background : `linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(${background})` }}
       >
         <Topper />
         <MyNavbar />
