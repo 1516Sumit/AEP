@@ -15,10 +15,10 @@ function Industrialapplication() {
     >
       <div className="w-[85vw] md:w-8/12" id="indus" style={{ margin: "0px" }} data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-        <h6 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>Application</h6>{" "}
-        <h2 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>
-          <u className="underline">Industrial</u> Application
-        </h2>
+        <h2 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}><u className="underline">Applications</u></h2>{" "}
+        <h6 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>
+          Industrial Application
+        </h6>
         <p className="p-i">
         AEP ENG developed carbon-neutral technologies for hazardous waste processing, maximizing resource recovery<br/> and energy extraction for a circular economy.
         </p>
@@ -36,7 +36,7 @@ function Industrialapplication() {
               <div className="card ">
                 <div className="card-body">
                   <img src={icon}  alt="#"></img>
-                  <h5 className="card-title">Agriculture and Food industry</h5>
+                  <h5 className="card-title">Agriculture and Food Industry</h5>
                   <p className="card-text">
                   Annual global Manure production output is x3 times larger than of the global Coal mining.
                   </p>
