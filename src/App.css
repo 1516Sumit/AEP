@@ -41,7 +41,7 @@ a {
 }
 nav {
   background-color: transparent;
-  margin: 0px 15vh 0px 15vh;
+  padding: 0px 5vh 0px 5vh!important;
 }
 #aep {
   width: 7vw;
@@ -55,16 +55,16 @@ nav {
   src: url(../src/fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Regular.otf);
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   src: url(../src/fonts/Montserrat/static/Montserrat-Bold.ttf);
 }
 #hi {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   color: #fff;
   font-size: 90px;
   text-align: center;
 
-  font-weight: 700;
+  font-weight: 500;
   margin: 10% 10% 5% 10%;
   text-transform: capitalize;
 }
@@ -85,9 +85,15 @@ nav {
   text-align: center;
 }
 #orange-button {
+  background: #ffffff;
+  color: #191939;
+  padding: 10px;
+}
+
+#gallary-button{
   background: #191939;
   color: #ffffff;
-  padding: 1%;
+  padding: 10px;
 }
 #white-button {
   background-color: #fff;
@@ -178,7 +184,15 @@ br {
   color: #4b6bfb;
   background-color: #4b6bfb 5%;
 }
+
 /* media */
+
+@media (max-width: 1024px) {
+  #hi {
+    font-size: 65px;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     margin: 0%;
@@ -288,14 +302,14 @@ br {
   #aep {
     width: 15vw;
   }
-  #navi {
+  /* #navi {
     width: 80%;
-  }
+  } */
 
-  nav {
+  /* nav {
     background-color: transparent;
     margin: 0px 5vh 0px 5vh;
-  }
+  } */
 }
 
 .card:hover {

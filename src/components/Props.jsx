@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { Button, Modal, Form } from "react-bootstrap";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { Link } from "react-router-dom";
-// import watsapp from "../icons/whatsapp (1).png";
+import { Link } from "react-router-dom";
+import watsapp from "../icons/whatsapp (1).png";
 import Topper from "./Topper";
 import MyNavbar from "./MyNavbar";
 import Footer from "./Footer";
@@ -12,6 +15,11 @@ function Props(props) {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -30,22 +38,19 @@ function Props(props) {
         >
           <h1
             id="hi"
-            className="!text-5xl md:!text-7xl lg:text-8xl md:!mt-40 lg:mt-0 md:!mb-4"
+            className="!text-5xl md:!text-7xl lg:text-8xl md:!mt-56 lg:mt-0 md:!mb-4"
           >
             {props.heading}
           </h1>
           <p id="home-p" className="text-white text-3xl ">
             {props.sub}
           </p>
-          {/* <div
+          <div
             id="buttons"
             className="flex flex-row items-center justify-center"
           >
-            <button className="w-36" id="orange-button">
-              Get a Quote {">"}
-            </button>
-            <button className="w-36" id="white-button">
-              Get a Quote {">"}
+            <button className="w-auto" id="orange-button">
+              Get In Touch With Us
             </button>
             <Link className="z-10 relative" target="_blank" to="https://wa.me/(+62) 888-800-212">
               <img
@@ -54,7 +59,7 @@ function Props(props) {
                 alt="whatsapp-icon"
               ></img>
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
       {props.para && (
@@ -147,7 +152,132 @@ function Props(props) {
           >
             {props.para10}
           </p>
-        </div><Footer /></>
+        </div>
+
+        <div
+        id="buttons"
+        className="flex flex-row items-center justify-center"
+      >
+        <button to='/' className="w-36" id="gallary-button" onClick={handleShow}>
+          Contact Us
+        </button>
+      </div>
+
+        <Modal show={show} onHide={handleClose} >
+        <div className="flex flex-col w-full">
+          {/* <div>
+            {" "}
+            <img alt="#" src={conimg} style={{ width: "20vw" }} />
+          </div> */}
+          <div>
+            <Modal.Header closeButton>
+              <div className="flex flex-col">
+                <Modal.Title>Contact Us</Modal.Title>
+                <p>Any question or remarks? Just write us a message!</p>
+              </div>
+            </Modal.Header>
+            <Modal.Body>
+              <Form>
+                <div className="flex flex-col">
+                  <Form.Group>
+                    <Form.Label>First Name</Form.Label>
+                    <Form.Control />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Last Name</Form.Label>
+                    <Form.Control />
+                  </Form.Group>
+                </div>
+                <div className="flex flex-col">
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="name@example.com"
+                      autoFocus
+                    />
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label>Phone Number:</Form.Label>
+                    <Form.Control type="Number" />
+                  </Form.Group>
+                </div>
+                <Form.Group
+                  className="mb-3"
+                  controlId="exampleForm.ControlTextarea1"
+                >
+                  <Form.Label>What Brings You Here</Form.Label>
+                  <Form.Control as="textarea" rows={3} />
+                </Form.Group>
+                {/* {["checkbox", "radio"].map((type) => ( */}
+                <div className="flex flex-col justify-evenly items-start mb-3">
+                  <Form.Label>What is the best place to contact you:</Form.Label>
+                  <div className="flex flex-row items-start justify-center">
+                    <Form.Check
+                      inline
+                      label="Email"
+                      name="Email"
+                    // type={type}
+                    // id={`inline-${type}-1`}
+                    />
+                    <Form.Check
+                      inline
+                      label="Phone"
+                      name="Phone"
+                    // type={type}
+                    // id={`inline-${type}-2`}
+                    />
+                  </div>
+                  {/* <Form.Check
+                      inline
+                      disabled
+                      label="3 (disabled)"
+                      // type={type}
+                      // id={`inline-${type}-3`}
+                    /> */}
+                </div>
+                {/* ))} */}
+
+                <div className="flex flex-col justify-evenly items-start mb-3">
+                  <Form.Label>How did you get to know about us:</Form.Label>
+                  <div className="flex flex-wrap flex-row items-start md:justify-center">
+                    <Form.Check
+                      inline
+                      label="Social Media"
+                      name="Email"
+                    // type={type}
+                    // id={`inline-${type}-1`}
+                    />
+                    <Form.Check
+                      inline
+                      label="Events"
+                      name="Phone"
+                    // type={type}
+                    // id={`inline-${type}-2`}
+                    />
+                  <Form.Check
+                      inline
+                      label="News Articals"
+                      name="News"
+                      // type={type}
+                      // id={`inline-${type}-3`}
+                    />
+                  </div>
+                </div>
+              </Form>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="primary" onClick={handleClose}>
+                Send Message
+              </Button>
+            </Modal.Footer>
+          </div>
+        </div>
+      </Modal>
+        <Footer /></>
       )}
     </>
   );

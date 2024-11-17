@@ -32,6 +32,7 @@ import Pulsedryer from "./components/technlogies/Pulsedryer.jsx";
 import ShockCondensation from "./components/technlogies/ShockCondensation.jsx";
 import WasteWaster from "./components/technlogies/WasteWater.jsx";
 import Props from "./components/Props.jsx";
+import Works from "./components/Works.jsx";
 
 
 import background from "./img/pexels-pixabay-221369.jpg";
@@ -88,6 +89,8 @@ function App() {
           <Route exact path="WasteWaterReacycling" element={<WasteWaster />} />
           <Route exact path="FlowBattery" element={<FlowBattery />} />
           <Route exact path="PyrolysisofMethane" element={<MethanePyrolysis />} />
+
+          <Route exact path="Works" element={<Works />} />
         </Routes>
       </Router>
     </>

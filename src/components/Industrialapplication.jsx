@@ -15,8 +15,8 @@ function Industrialapplication() {
     >
       <div className="w-[85vw] md:w-8/12" id="indus" style={{ margin: "0px" }} data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-        <h2 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}><u className="underline">Applications</u></h2>{" "}
-        <h6 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>
+        <h2 style={{ color: "#191939", fontWeight:"500", fontFamily:"Montserrat" }}><u className="underline">Applications</u></h2>{" "}
+        <h6 style={{ color: "#191939", fontWeight:"600", fontFamily:"Montserrat" }}>
           Industrial Application
         </h6>
         <p className="p-i">

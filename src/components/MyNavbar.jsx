@@ -23,20 +23,29 @@ const MyNavbar = () => {
 
   return (
     <>
-      <Navbar id="navi" expand="lg" bg="transparent" variant="light">
+      <Navbar className="relative p-2 sm:p-0" id="navi" expand="lg" bg="transparent" variant="light" style={{
+        background: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))`,
+      }}>
         <Navbar.Brand as={Link} to="/" onClick={(e) => handleLinkClick(e, '/')}>
           <img id="aep" className="bg-transparent" src={logo} alt="logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarNavDropdown" />
+        <Navbar.Toggle aria-controls="navbarNavDropdown" className="!bg-white"/>
         <Navbar.Collapse id="navbarNavDropdown" className="justify-content-end text-white">
           <Nav>
-            <Nav.Link  className="font-poppins text-white" as={Link} to="/about" onClick={(e) => handleLinkClick(e, '/about')}>
-              About
+            <Nav.Link className="font-poppins text-white" as={Link} to="/about" onClick={(e) => handleLinkClick(e, '/about')}>
+              About Us
+            </Nav.Link>
+            <Nav.Link className="font-poppins text-white" as={Link} to="/" onClick={(e) => handleLinkClick(e, '/about')}>
+              News
             </Nav.Link>
             <NavDropdown className="text-white" title={<span className="text-white">Services</span>} id="navbarDropdownMenuLink">
-              <NavDropdown.Item as={Link} to="#">Action</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="#">Another action</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="#">Something else here</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/OurInnovationInPyrolysis" onClick={(e) => handleLinkClick(e, '/agriculturalWaste')}>Our innovation in Pyrolysis</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/PulseDryer" onClick={(e) => handleLinkClick(e, '/fuelWaste')}>Pulse Dryer</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/ShockCondensation" onClick={(e) => handleLinkClick(e, '/plastic')}>Shock Condensation</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/GasCleansing" onClick={(e) => handleLinkClick(e, '/municipalWaste')}>Gas Cleansing</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/WasteWaterReacycling" onClick={(e) => handleLinkClick(e, '/rubberWaste')}>Waste Water Reacycling</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/FlowBattery" onClick={(e) => handleLinkClick(e, '/bioHazardWaste')}>Powder Battery Reduction Oxidation / Flow Battery</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/PyrolysisofMethane" onClick={(e) => handleLinkClick(e, '/bioHazardWaste')}>Pyrolysis of Methane into Green Hydrogen</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
               title={<span className="text-white">Application by waste</span>}
@@ -115,35 +124,64 @@ const MyNavbar = () => {
                   className="mb-3"
                   controlId="exampleForm.ControlTextarea1"
                 >
-                  <Form.Label>Example textarea</Form.Label>
+                  <Form.Label>What Brings You Here</Form.Label>
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
-                {["checkbox", "radio"].map((type) => (
-                  <div key={`inline-${type}`} className="flex flex-row justify-evenly items-center mb-3">
-                    <Form.Label>Select Subjects: </Form.Label>
+                {/* {["checkbox", "radio"].map((type) => ( */}
+                <div className="flex flex-col justify-evenly items-start mb-3">
+                  <Form.Label>What is the best place to contact you:</Form.Label>
+                  <div className="flex flex-row items-start justify-center">
                     <Form.Check
                       inline
-                      label="1"
-                      name="group1"
-                      type={type}
-                      id={`inline-${type}-1`}
+                      label="Email"
+                      name="Email"
+                    // type={type}
+                    // id={`inline-${type}-1`}
                     />
                     <Form.Check
                       inline
-                      label="2"
-                      name="group1"
-                      type={type}
-                      id={`inline-${type}-2`}
+                      label="Phone"
+                      name="Phone"
+                    // type={type}
+                    // id={`inline-${type}-2`}
                     />
-                    <Form.Check
+                  </div>
+                  {/* <Form.Check
                       inline
                       disabled
                       label="3 (disabled)"
-                      type={type}
-                      id={`inline-${type}-3`}
+                      // type={type}
+                      // id={`inline-${type}-3`}
+                    /> */}
+                </div>
+                {/* ))} */}
+
+                <div className="flex flex-col justify-evenly items-start mb-3">
+                  <Form.Label>How did you get to know about us:</Form.Label>
+                  <div className="flex flex-wrap flex-row items-start md:justify-center">
+                    <Form.Check
+                      inline
+                      label="Social Media"
+                      name="Email"
+                    // type={type}
+                    // id={`inline-${type}-1`}
+                    />
+                    <Form.Check
+                      inline
+                      label="Events"
+                      name="Phone"
+                    // type={type}
+                    // id={`inline-${type}-2`}
+                    />
+                  <Form.Check
+                      inline
+                      label="News Articals"
+                      name="News"
+                      // type={type}
+                      // id={`inline-${type}-3`}
                     />
                   </div>
-                ))}
+                </div>
               </Form>
             </Modal.Body>
             <Modal.Footer>

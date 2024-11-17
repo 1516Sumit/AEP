@@ -22,10 +22,10 @@ function ApplicationByWaste() {
     >
       <div className="w-[85vw] lg:w-2/4 text-white" data-aos="fade-up"
         data-aos-anchor-placement="top-center">
-        <h2 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>
+        <h2 style={{ color: "#191939", fontWeight:"500", fontFamily:"Montserrat" }}>
           <u className="underline">Applications</u> 
         </h2>
-        <h6 style={{ color: "#191939", fontWeight:"bolder", fontFamily:"Montserrat" }}>Application By Wastes</h6>
+        <h6 style={{ color: "#191939", fontWeight:"600", fontFamily:"Montserrat" }}>Application By Wastes</h6>
         <p>
           AEP ENG specializes in comprehensive waste management solutions using advanced pyrolysis technology. Our modular plants, such as Pulsar-BIO and Pulsar-EL, are designed to handle a wide range of waste types effectively, from agricultural residues and rubber goods to complex plastics and hazardous biomedical waste. These solutions focus on maximizing resource recovery and energy extraction while minimizing environmental impact, achieving significant ESG (Environmental, Social, Governance) outcomes.
         </p>
