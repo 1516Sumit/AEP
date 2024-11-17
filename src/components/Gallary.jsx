@@ -12,7 +12,7 @@ import gallarysix from "../img/gallary6.jpg"
 import gallaryseven from "../img/gallary7.jpg"
 import gallaryeight from "../img/gallary8.jpg"
 import gallarynine from "../img/gallary9.jpg"
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Gallary() {
 
