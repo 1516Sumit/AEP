@@ -1,10 +1,11 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button, Modal, Form } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Tilt from 'react-parallax-tilt';
 import watsapp from "../icons/whatsapp (1).png";
 import Topper from "./Topper";
 // import Nav from "./Nav";
@@ -34,6 +35,8 @@ function Home() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const phoneNumber = '62888800212'; // International format without + or special characters
+  const preFilledMessage = encodeURIComponent("Hello, I would like to inquire about your services.");
 
   return (
     <>
@@ -56,15 +59,18 @@ function Home() {
         <MyNavbar />
         <div
           id="home1"
-          className="relative h-[40rem] md:h-[30rem] lg:h-auto flex flex-col items-center md:items-auto justify-center md:justify-between"
+          className="relative h-[40rem] md:h-[30rem] lg:h-auto flex flex-col items-center md:items-auto justify-center md:justify-between overflow-hidden"
         >
-          <h1
-            id="hi"
-            className="text-6xl lg:text-7xl md:!mt-40 lg:mt-0"
-            style={{textShadow: "12px 8px 30px rgba(0, 0, 0, 0.92)"}}
-          >
-            ⁠Carbon emission negative and energy effective solutions
-          </h1>
+          <Tilt tiltMaxAngleX={12}
+            tiltMaxAngleY={12}>
+            <h1
+              id="hii"
+              className="text-6xl lg:text-7xl md:!mt-40 lg:mt-0"
+              style={{ textShadow: "12px 8px 30px rgba(0, 0, 0, 0.92)" }}
+            >
+              ⁠Carbon emission negative and energy effective solutions
+            </h1>
+          </Tilt>
           {/* <p
             id="home-p"
             style={{ textShadow: " 0 0 3px #FFF, 0 0 5px #0000FF" }}
@@ -78,7 +84,7 @@ function Home() {
             <button className="w-auto" id="orange-button" onClick={handleShow}>
               Get In Touch With Us
             </button>
-            <Link className="z-10 relative" target="_blank" to='https://wa.me/(+62) 888-800-212'>
+            <Link className="z-10 relative" target="_blank" to={`https://wa.me/${phoneNumber}?text=${preFilledMessage}`}>
               <img
                 className="watsappicon"
                 src={watsapp}
@@ -87,7 +93,7 @@ function Home() {
             </Link>
           </div>
         </div>
-      </div>
+      </div >
       <Second />
       {/* <Long /> */}
       <Industrialapplication />
@@ -204,12 +210,12 @@ Andrey, Co-Founder, Director, and CEO of AEP TECH (Singapore) and regional Direc
                     // type={type}
                     // id={`inline-${type}-2`}
                     />
-                  <Form.Check
+                    <Form.Check
                       inline
                       label="News Articals"
                       name="News"
-                      // type={type}
-                      // id={`inline-${type}-3`}
+                    // type={type}
+                    // id={`inline-${type}-3`}
                     />
                   </div>
                 </div>

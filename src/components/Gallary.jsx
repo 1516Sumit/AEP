@@ -76,7 +76,7 @@ function Gallary() {
       </div>
       <div
         id="buttons"
-        className="flex flex-row items-center justify-center"
+        className="flex flex-row items-center justify-center py-5"
       >
         <button to='/' className="w-36" id="gallary-button" onClick={handleShow}>
           Contact Us

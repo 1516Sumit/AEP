@@ -58,7 +58,8 @@ nav {
   font-family: Montserrat, sans-serif;
   src: url(../src/fonts/Montserrat/static/Montserrat-Bold.ttf);
 }
-#hi {
+
+#hii {
   font-family: Montserrat, sans-serif;
   color: #fff;
   font-size: 90px;
@@ -66,6 +67,16 @@ nav {
 
   font-weight: 500;
   margin: 10% 10% 5% 10%;
+  text-transform: capitalize;
+}
+#hi {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 90px;
+  text-align: center;
+
+  font-weight: 500;
+  margin: 10% 10% 5% 0%;
   text-transform: capitalize;
 }
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
@@ -188,6 +199,9 @@ br {
 /* media */
 
 @media (max-width: 1024px) {
+  #hii {
+    font-size: 65px;
+  }
   #hi {
     font-size: 65px;
   }
@@ -252,6 +266,10 @@ br {
   } */
   #logo {
     padding: 10px;
+  }
+  #hii {
+    font-size: 30px;
+    line-height: 50px;
   }
   #hi {
     font-size: 30px;

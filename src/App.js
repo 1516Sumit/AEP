@@ -37,6 +37,7 @@ import Works from "./components/Works.jsx";
 
 import background from "./img/pexels-pixabay-221369.jpg";
 import About from "./components/About.jsx";
+import PdfFiles from "./components/padffiles/PdfFIles.jsx";
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="about" element={<About />} />
+          <Route exact path="pdfFiles" element={<PdfFiles />} />
           <Route
             exact path="blogs"
             element={
@@ -90,7 +92,7 @@ function App() {
           <Route exact path="FlowBattery" element={<FlowBattery />} />
           <Route exact path="PyrolysisofMethane" element={<MethanePyrolysis />} />
 
-          <Route exact path="Works" element={<Works />} />
+          <Route exact path="Projects" element={<Works />} />
         </Routes>
       </Router>
     </>

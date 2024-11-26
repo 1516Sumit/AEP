@@ -23,7 +23,7 @@ const MyNavbar = () => {
 
   return (
     <>
-      <Navbar className="relative p-2 sm:p-0" id="navi" expand="lg" bg="transparent" variant="light" style={{
+      <Navbar className="relative py-2 px-4 sm:p-0" id="navi" expand="lg" bg="transparent" variant="light" style={{
         background: `linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))`,
       }}>
         <Navbar.Brand as={Link} to="/" onClick={(e) => handleLinkClick(e, '/')}>
